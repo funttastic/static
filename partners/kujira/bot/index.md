@@ -22,7 +22,7 @@ It's very recommended to watch this video from the Hummingbot Foundation and the
 
 ## Installation
 
-<img src="assets/images/Funttastic_Kujira_Hummingbot.png">
+<img src="/assets/images/Funttastic_Kujira_Hummingbot.png">
 
 ### Code
 
