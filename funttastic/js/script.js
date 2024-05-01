@@ -3,7 +3,7 @@
   "use strict";
 
   // init Chocolat light box
-  var initChocolat = function() {
+  const initChocolat = function() {
   Chocolat(document.querySelectorAll('.image-link'), {
       imageSize: 'contain',
       loop: true,
