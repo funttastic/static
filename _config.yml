@@ -1,3 +1,13 @@
 theme: jekyll-theme-cayman
 title: Funttastic + Kujira + Hummingbot
 baseurl: "/static"
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+description: "Guia de instalação e uso do Hummingbot com integração Kujira."

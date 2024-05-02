@@ -22,14 +22,14 @@ It's very recommended to watch this video from the Hummingbot Foundation and the
 
 ## Installation
 
-<img src="../../../assets/images/Funttastic_Kujira_Hummingbot.png">
+<img alt="image" src="../../../assets/images/Funttastic_Kujira_Hummingbot.png">
 
 ### Code
 
 > git clone <a href="https://github.com/funttastic/kujira-quickstart-guide.git" target="_blank">https://github.com/funttastic/kujira-quickstart-guide.git</a>
->
+
 > cd kujira-quickstart-guide
->
+
 > ./configure
 
 ### Adding a Kujira wallet
@@ -53,7 +53,7 @@ You need to navigate to
 
 > shared/funttastic/client/resources/strategies/pure_market_making/1.0.0
 
-there you can configure you Supervisor (`supervisor.yml`) and your workers (`workers/01.yml`, etc.).
+there you can configure your Supervisor (`supervisor.yml`) and your workers (`workers/01.yml`, etc.).
 
 You can use the `workers/common.yml` file if you want a configuration to be replicated to all your workers.
 If a specific worker has a different configuration, the worker configuration will then apply.
@@ -75,9 +75,9 @@ Open the following configuration file:
 You are enabling telegram, we recommend changing to `true` the following:
 
 > logging.use_telegram
->
+
 > telegram.enabled
->
+
 > telegram.listen_commands
 
 Add your telegram token: to
