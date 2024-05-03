@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funttastic + Kujira + Hummingbot</title>
+</head>
+<body>
+<h1>Funttastic + Kujira + Hummingbot</h1>
+
+<h2>Hummingbot Installation Guide</h2>
+<p>It's very recommended to watch this video from the Hummingbot Foundation and their installation guide:</p>
+<ul>
+    <li><a href="https://docs.hummingbot.org/installation/" target="_blank">Hummingbot Docs</a></li>
+    <li><a href="https://www.youtube.com/watch?v=t3Su_F_SY_0" target="_blank">Hummingbot Guide (Video Tutorial)</a></li>
+    <li><a href="https://www.youtube.com/watch?v=NubBPj3N0RE" target="_blank">Kujira Connector for Hummingbot (Video Demonstration)</a></li>
+</ul>
+
+<h2>Prerequisites:</h2>
+<ul>
+    <li>*nix OS (Linux, Unix, macOS) or <a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank">WSL</a> (for Windows)</li>
+    <li><a href="https://docs.docker.com/engine/install/" target="_blank">Docker</a></li>
+    <li><a href="https://www.coingecko.com/en/api/pricing" target="_blank">CoinGecko API Key</a>
+        <ul>
+            <li>You will need a CoinGecko API key so the trading bot can get up-to-date information about tokens and markets, such as the current prices. Access the link to create a demo account and get a free API key.</li>
+        </ul>
+    </li>
+    <li>Kujira wallet and mnemonic
+        <ul>
+            <li>You will need a Kujira wallet and its mnemonic. You can create a new wallet using wallet apps like: <a href="https://www.keplr.app/download" target="_blank">Keplr</a>, <a href="https://sonar.kujira.network/" target="_blank">Sonar</a>, <a href="https://setup-station.terra.money/" target="_blank">Station</a>, <a href="https://www.leapwallet.io/download" target="_blank">Leap</a> and <a href="https://www.xdefi.io/" target="_blank">XDEFI Wallet</a>.</li>
+        </ul>
+    </li>
+    <li>(Optional) <a href="https://core.telegram.org/bots/features#botfather" target="_blank">Telegram bot</a>
+        <ul>
+            <li>You can operate your bot through Telegram, for that you need to <a href="https://core.telegram.org/bots/features#botfather" target="_blank">create a bot</a> and a new channel.</li>
+            <li>You will need the telegram bot token and the channel chat id.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Installation</h2>
+<img src="../../../assets/images/Funttastic_Kujira_Hummingbot.png" alt="Funttastic Kujira Hummingbot">
+
+<details>
+    <summary>
+        <span style="font-size:22px; font-weight:bold">Cloning Repository</span>
+    </summary>
+    <h4>Step 1 - Install Git</h4>
+    <p>Install Git to be able to clone the repository:</p>
+    <ul>
+        <li>Linux - Debian / Ubuntu / WSL:
+            <pre>sudo apt install git</pre>
+        </li>
+        <li>Linux - Fedora:
+            <pre>sudo dnf install git</pre>
+        </li>
+        <li>Linux - CentOS / RHEL:
+            <pre>sudo yum install git</pre>
+        </li>
+        <li>macOS:
+            <pre>brew install git</pre>
+        </li>
+    </ul>
+
+    <h4>Step 2 - Cloning Repository</h4>
+    <p>Open the shell terminal, use the "cd" command to navigate to the folder where you want to clone the repository and run the command below:</p>
+    <pre>git clone https://github.com/funttastic/kujira-quickstart-guide.git</pre>
+</details>
+
+<details>
+    <summary>
+        <span style="font-size:22px; font-weight:bold">Opening Script Main Menu</span>
+    </summary>
+    <h4>Step 1 - After cloning the repository</h4>
+    <p>Open the repository folder with the command below:</p>
+    <pre>cd kujira-quickstart-guide</pre>
+
+    <h4>Step 2 - Start the installation helper script</h4>
+    <p>Using the command below, start the script that will help you perform the installation:</p>
+    <pre>./configure</pre>
+    <p>When you run the script, you will see the main menu screen as shown below:</p>
+    <img src="../../../assets/images/script/main_menu.png" alt="Main Menu">
+</details>
+
+<!-- Additional <details> sections would be inserted here following the same structure for each section provided in your Markdown. -->
+
+<h2>Extra (optional)</h2>
+<h3>More tutorial videos</h3>
+<p>You can access our playlist explaining how to configure several aspects for the bot:</p>
+<a href="https://www.youtube.com/playlist?list=PLmJF3KyUOI1zgFBoQ0AzP9kt40Vjk2srp" target="_blank">More tutorial videos</a>
+
+<h3>Configuring a telegram integration</h3>
+<p>Open the following configuration file:</p>
+<pre>shared/funttastic/client/resources/configuration/production.yml</pre>
+<p>You are enabling telegram, we recommend changing to `true` the following:</p>
+<pre>
+logging.use_telegram
+telegram.enabled
+telegram.listen_commands
+</pre>
+<p>Add your telegram token to:</p>
+<pre>telegram.token</pre>
+<p>and your telegram channel chat id to:</p>
+<pre>telegram.chat_id</pre>
+
+<h3>Adding funds to a testnet wallet</h3>
+<p>In order to add funds to your wallet, you can use a faucet inside the Kujira Discord.</p>
+<p>To join their discord you can use this link:</p>
+<a href="https://discord.gg/teamkujira" target="_blank">https://discord.gg/teamkujira</a>
+<p>After joining and doing their verification process, you can look for this channel:</p>
+<p>#public-testnet-faucet</p>
+<p>Or try this link:</p>
+<a href="https://discord.com/channels/970650215801569330/1009931570263629854" target="_blank">https://discord.com/channels/970650215801569330/1009931570263629854</a>
+<p>Then you can use the following command there:</p>
+<pre>!faucet &lt;change to your Kujira wallet address here&gt;</pre>
+
+<h2>How to contact us</h2>
+<p>If you need more info you can contact us here:</p>
+<a href="https://funttastic.com/discord" target="_blank">https://funttastic.com/discord</a>
+
+</body>
+</html>
