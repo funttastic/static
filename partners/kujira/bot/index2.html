@@ -9,19 +9,19 @@
 
     <title>Funttastic + Kujira + Hummingbot</title>
 </head>
-<body>
-<h1>Funttastic + Kujira + Hummingbot</h1>
+<body class="container py-5">
+<h1 class="heading">Funttastic + Kujira + Hummingbot</h1>
 
-<h2>Hummingbot Installation Guide</h2>
+<h2 class="display-2">Hummingbot Installation Guide</h2>
 <p>It's very recommended to watch this video from the Hummingbot Foundation and their installation guide:</p>
 <ul>
-    <li><a href="https://docs.hummingbot.org/installation/" target="_blank">Hummingbot Docs</a></li>
-    <li><a href="https://www.youtube.com/watch?v=t3Su_F_SY_0" target="_blank">Hummingbot Guide (Video Tutorial)</a></li>
-    <li><a href="https://www.youtube.com/watch?v=NubBPj3N0RE" target="_blank">Kujira Connector for Hummingbot (Video Demonstration)</a></li>
+    <li><a href="https://docs.hummingbot.org/installation/" class="btn" target="_blank">Hummingbot Docs</a></li>
+    <li><a href="https://www.youtube.com/watch?v=t3Su_F_SY_0" class="btn" target="_blank">Hummingbot Guide (Video Tutorial)</a></li>
+    <li><a href="https://www.youtube.com/watch?v=NubBPj3N0RE" class="btn" target="_blank">Kujira Connector for Hummingbot (Video Demonstration)</a></li>
 </ul>
 
-<h2>Prerequisites:</h2>
-<ul>
+<h2 class="sub-heading">Prerequisites:</h2>
+<ul class="prerequisites">
     <li>*nix OS (Linux, Unix, macOS) or <a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank">WSL</a> (for Windows)</li>
     <li><a href="https://docs.docker.com/engine/install/" target="_blank">Docker</a></li>
     <li><a href="https://www.coingecko.com/en/api/pricing" target="_blank">CoinGecko API Key</a>
@@ -42,72 +42,72 @@
     </li>
 </ul>
 
-<h2>Installation</h2>
+<h2 class="sub-heading">Installation</h2>
 <img src="../../../assets/images/Funttastic_Kujira_Hummingbot.png" alt="Funttastic Kujira Hummingbot">
 
 <details>
-    <summary>
+    <summary class="details-heading">
         <span style="font-size:22px; font-weight:bold">Cloning Repository</span>
     </summary>
-    <h4>Step 1 - Install Git</h4>
+    <h4 class="sub-heading">Step 1 - Install Git</h4>
     <p>Install Git to be able to clone the repository:</p>
     <ul>
         <li>Linux - Debian / Ubuntu / WSL:
-            <pre>sudo apt install git</pre>
+            <pre class="code">sudo apt install git</pre>
         </li>
         <li>Linux - Fedora:
-            <pre>sudo dnf install git</pre>
+            <pre class="code">sudo dnf install git</pre>
         </li>
         <li>Linux - CentOS / RHEL:
-            <pre>sudo yum install git</pre>
+            <pre class="code">sudo yum install git</pre>
         </li>
         <li>macOS:
-            <pre>brew install git</pre>
+            <pre class="code">brew install git</pre>
         </li>
     </ul>
 
-    <h4>Step 2 - Cloning Repository</h4>
+    <h4 class="sub-heading">Step 2 - Cloning Repository</h4>
     <p>Open the shell terminal, use the "cd" command to navigate to the folder where you want to clone the repository and run the command below:</p>
-    <pre>git clone https://github.com/funttastic/kujira-quickstart-guide.git</pre>
+    <pre class="code">git clone https://github.com/funttastic/kujira-quickstart-guide.git</pre>
 </details>
 
 <details>
-    <summary>
+    <summary class="details-heading">
         <span style="font-size:22px; font-weight:bold">Opening Script Main Menu</span>
     </summary>
-    <h4>Step 1 - After cloning the repository</h4>
+    <h4 class="sub-heading">Step 1 - After cloning the repository</h4>
     <p>Open the repository folder with the command below:</p>
-    <pre>cd kujira-quickstart-guide</pre>
+    <pre class="code">cd kujira-quickstart-guide</pre>
 
-    <h4>Step 2 - Start the installation helper script</h4>
+    <h4 class="sub-heading">Step 2 - Start the installation helper script</h4>
     <p>Using the command below, start the script that will help you perform the installation:</p>
-    <pre>./configure</pre>
+    <pre class="code">./configure</pre>
     <p>When you run the script, you will see the main menu screen as shown below:</p>
     <img src="../../../assets/images/script/main_menu.png" alt="Main Menu">
 </details>
 
 <details>
-    <summary>
+    <summary class="details-heading">
         <span style="font-size:22px; font-weight:bold">Installation Steps</span>
     </summary>
 
-    <h4>Step 1 - Select the installation option from the main menu</h4>
+    <h4 class="sub-heading">Step 1 - Select the installation option from the main menu</h4>
     <p>As shown in the image below, select the <strong>[1] INSTALL</strong> option by typing "1" and press Enter.</p>
     <img src="../../../assets/images/script/main_menu.png" alt="Main Menu">
 
-    <h4>Step 2 - Set username and password</h4>
+    <h4 class="sub-heading">Step 2 - Set username and password</h4>
     <p>Set your custom username or press Enter without typing anything to set "admin". Then type your password twice to set it. Set a strong password, longer than 4 digits but easy to remember.</p>
     <img src="../../../assets/images/script/username_password.png" alt="Username and Password Setup">
 
-    <h4>Step 3 - Question that must be answered carefully</h4>
+    <h4 class="sub-heading">Step 3 - Question that must be answered carefully</h4>
     <p>The next question must be answered carefully. This option affects security or ease of use.</p>
     <img src="../../../assets/images/script/credential_security.png" alt="Credential Security">
 
-    <h4>Step 4 - Table to show credential usage</h4>
+    <h4 class="sub-heading">Step 4 - Table to show credential usage</h4>
     <p>A table will be shown to inform where the credentials will be used. Press any key to continue.</p>
     <img src="../../../assets/images/script/credential_usage.png" alt="Credential Usage">
 
-    <h4>Step 5 - Default installation settings?</h4>
+    <h4 class="sub-heading">Step 5 - Default installation settings?</h4>
     <p>You will be asked if you want to automate the entire installation process.</p>
     <p>If you choose "Yes", which is the recommended option, or just press Enter without typing anything, the installation will be done using default settings and will begin immediately.</p>
     <p>If you choose "No", you will need to answer further questions to create the entire installation configuration and at the end you can review the settings and then press Enter once again for the installation to begin.</p>
@@ -117,11 +117,11 @@
 </details>
 
 <details>
-    <summary>
+    <summary class="details-heading">
         <span style="font-size:22px; font-weight:bold">Opening The Frontend</span>
     </summary>
 
-    <h4>Step 1 - From the main menu, select the Actions option</h4>
+    <h4 class="sub-heading">Step 1 - From the main menu, select the Actions option</h4>
     <p>Select the <strong>[3] ACTIONS</strong> option by typing "3" and press Enter.</p>
     <img src="../../../assets/images/script/main_menu.png" alt="Main menu">
 
@@ -143,11 +143,11 @@
 </details>
 
 <details>
-    <summary>
+    <summary class="details-heading">
         <span style="font-size:22px; font-weight:bold">Adding Wallet</span>
     </summary>
 
-    <h4>Step 1 - Adding Wallet With Mnemonic</h4>
+    <h4 class="sub-heading">Step 1 - Adding Wallet With Mnemonic</h4>
     <p>When you created your wallet, a set of words was generated, probably 12 words. This set of words is called <strong>Mnemonic</strong>.</p>
     <p>In the <strong>mnemonic</strong> field, highlighted in the image below, add your wallet mnemonic and click the <strong>Add Wallet</strong> button:</p>
     <img src="../../../assets/images/script/frontend_home_adding_wallet.png" alt="Adding wallet with mnemonic">
@@ -155,13 +155,13 @@
     <p>After you click on the <strong>Add Wallet</strong> button, wait a few seconds until a pop-up window appears with the message <strong>"Wallet added successfully"</strong>, as you can see in the image below, indicating that the wallet has been added and can now be used.</p>
     <img src="../../../assets/images/script/wallet_added_sucessfully.png" alt="Wallet added successfully">
 
-    <h4>Step 2 - Confirming Wallet Addition</h4>
+    <h4 class="sub-heading">Step 2 - Confirming Wallet Addition</h4>
     <p>If you want, you can confirm the wallet addition using Filebrowser. To do this, in the Frontend left side menu, choose "Files", enter your username and password to log in:</p>
     <img src="../../../assets/images/script/frontend_filebrowser.png" alt="Filebrowser">
 
     <p>When you add a wallet, it will be added to the Hummingbot Gateway and Hummingbot Client files.</p>
     <p>In Hummingbot Gateway, for each wallet added, there will be a .json file in the directory:</p>
-    <pre>shared/hummingbot/gateway/conf/wallets/kujira</pre>
+    <pre class="code">shared/hummingbot/gateway/conf/wallets/kujira</pre>
     <img src="../../../assets/images/script/gateway_wallet_folder.png" alt="Filebrowser">
 
     <p>In the Hummingbot Client, when you add a wallet, it will be added to the <strong>mainnet</strong> and <strong>testnet</strong> networks in the <strong>shared/hummingbot/conf/gateway_connections.json</strong> file and due to how the Hummingbot Client works, whenever you add a new wallet to the same chain, this new wallet will replace the wallet that was previously added, so for the Hummingbot Client, each chain can only have one wallet, but for the Hummingbot Gateway, there can be indefinite wallets added.</p>
@@ -169,20 +169,20 @@
 </details>
 
 <details>
-    <summary>
+    <summary class="details-heading">
         <span style="font-size:22px; font-weight:bold">Configuring Strategy & Workers</span>
     </summary>
 
-    <h4>Step 1 - Go To Strategy Configuration Files Directory</h4>
+    <h4 class="sub-heading">Step 1 - Go To Strategy Configuration Files Directory</h4>
     <p>Using Filebrowser through Frontend, access the following directory to access the strategy configuration files:</p>
-    <pre>shared/funttastic/client/resources/strategies/pure_market_making/1.0.0</pre>
+    <pre class="code">shared/funttastic/client/resources/strategies/pure_market_making/1.0.0</pre>
     <p>There you can configure your Supervisor (<code>supervisor.yml</code>) and your workers (<code>workers/01.yml</code>, etc.).</p>
     <img src="../../../assets/images/script/pmm_strategy_conf_folder.png" alt="Strategy configuration files">
     <p>You can use the <code>workers/common.yml</code> file if you want a configuration to be replicated to all your workers.
         If a specific worker has a different configuration, the worker configuration will then apply.</p>
     <img src="../../../assets/images/script/workers_pmm_strategy_conf_folder.png" alt="Workers strategy configuration files">
 
-    <h4>Step 3 - Configuring A Worker</h4>
+    <h4 class="sub-heading">Step 3 - Configuring A Worker</h4>
     <p>By default, there are already configuration files for three workers in the <strong>workers</strong> folder.</p>
     <p>If you want more workers, just duplicate any of the worker configuration files and change the <strong>id</strong> in the settings within the file to an id that is not in use.</p>
     <p>For both the file names and their internally defined ids, you can define whatever name you want, just keep the <strong>.yml</strong> extension.</p>
@@ -203,7 +203,7 @@
     <p>Each layer has a "bid" side and an "ask" side. If you want, you can define different quantity, spread, and budget values between sides.</p>
     <p>Some settings can be made using absolute values or percentage values. Absolute values will prevail over percentage values. To understand better, consider for example the spread configuration on the bid side of layer 1 - if you define a value greater than zero for absolute, regardless of the value you define in percentage, the absolute value that will be considered, so if you want the percentage value to be considered, set the absolute value to 0 (zero) or null.</p>
 
-    <h4>Layer 1 (Line 6 to 21)</h4>
+    <h4 class="sub-heading">Layer 1 (Line 6 to 21)</h4>
     <p>Summary:</p>
     <p>In this example configuration, layer 1 is saying:</p>
     <ul>
@@ -211,12 +211,12 @@
         <li>Create 4 sell orders, with each order having an amount of 25 (100 / 4 = 25) KUJI and the prices of the orders must be within a distance of 5% in relation to the market price.</li>
     </ul>
 
-    <p>To understand in detail, look at layer 1 - see that for bid the value 3 was defined for quantity, the value 0 for spread.absolute, the value 5 for spread.percentage, the value 120 for budget.absolute and the value 10 for budget.percentage.</p>
+    <p>To understand in detail, look at layer 1 - see that for bid the value 3 was defined for quantity, the value 0 for spread. absolute, the value 5 for spread. percentage, the value 120 for budget. absolute and the value 10 for budget.percentage.</p>
     <p>As explained previously, if the absolute value is greater than zero, it will be considered and the percentage value will be ignored.</p>
 
     <p><strong>Bid Side</strong>:</p>
-    <p>In spread, as the value 0 was defined for absolute and the value 5 for percentage, it means that the spread will be a percentage, that is, the orders will have their prices defined with a percentage distance in relation to the market price, in this example 5%. If a value greater than zero had been set for spread.absolute, the distance from the market price would be calculated using a fixed value.</p>
-    <p>In budget, both for absolute and percentage values greater than zero are defined, but the percentage value will be ignored, so the budget considered will be 120 tokens USK. If budget.absolute had been set to 0 or null, the budget would be 10% of the total amount of USK tokens in your portfolio.</p>
+    <p>In spread, as the value 0 was defined for absolute and the value 5 for percentage, it means that the spread will be a percentage, that is, the orders will have their prices defined with a percentage distance in relation to the market price, in this example 5%. If a value greater than zero had been set for spread. absolute, the distance from the market price would be calculated using a fixed value.</p>
+    <p>In budget, both for absolute and percentage values greater than zero are defined, but the percentage value will be ignored, so the budget considered will be 120 tokens USK. If budget. absolute had been set to 0 or null, the budget would be 10% of the total amount of USK tokens in your portfolio.</p>
     <p>In quantity, the value 3 was defined, so the budget defined for 120 would be divided into 3 parts, so each purchase order (bid) of layer 1 will have an amount of 40 USK.</p>
 
     <p><strong>Ask Side</strong>:</p>
@@ -224,7 +224,7 @@
     <p>In budget, the explanation is almost the same as the explanation given for the bid side, the difference is the amount. Now there are 100 USK tokens that will be divided by the number of orders that will be created.</p>
     <p>In quantity, the value 4 was defined, so the budget defined for 100 would be divided into 4 parts, so each sell order (ask) of layer 1 will have an amount of 25 USK.</p>
 
-    <h4>Layer 2 (Line 22 to 37)</h4>
+    <h4 class="sub-heading">Layer 2 (Line 22 to 37)</h4>
     <p>Summary:</p>
     <p>In this example configuration, layer 2 is saying:</p>
     <ul>
@@ -232,11 +232,11 @@
         <li>Allocate 25% of the total free KUJI in the portfolio and divide this allocated amount into 3 equal parts (orders) and the prices of the orders must be at a distance of 10% in relation to the market price.</li>
     </ul>
 
-    <p>To understand in detail, look at layer 2 - See that for bid the value 8 was defined for quantity, the value 0 for spread.absolute, the value 10 for spread.percentage, the value 0 for budget.absolute and the value 25 for budget.percentage. Also see that for ask the value 3 was defined for quantity, the value 0 for spread.absolute, the value 10 for spread.percentage, the value 0 for budget.absolute and the value 25 for budget.percentage.</p>
+    <p>To understand in detail, look at layer 2 - See that for bid the value 8 was defined for quantity, the value 0 for spread. absolute, the value 10 for spread. percentage, the value 0 for budget. absolute and the value 25 for budget.percentage. Also see that for ask the value 3 was defined for quantity, the value 0 for spread. absolute, the value 10 for spread. percentage, the value 0 for budget. absolute and the value 25 for budget.percentage.</p>
     <p>As explained previously, if the absolute value is greater than zero, it will be considered and the percentage value will be ignored.</p>
 
     <p><strong>Bid Side</strong>:</p>
-    <p>In spread, as the value 0 was defined for absolute and the value 10 for percentage, it means that the spread will be a percentage, that is, the orders will have their prices defined with a percentage distance in relation to the market price, in this example 10%. If a value greater than zero had been set for spread.absolute, the distance from the market price would have been calculated using a fixed value.</p>
+    <p>In spread, as the value 0 was defined for absolute and the value 10 for percentage, it means that the spread will be a percentage, that is, the orders will have their prices defined with a percentage distance in relation to the market price, in this example 10%. If a value greater than zero had been set for spread. absolute, the distance from the market price would have been calculated using a fixed value.</p>
     <p>In budget, as the value 0 was defined for absolute and the value 25 for percentage, it means that the budget will be a percentage in relation the free amount of USK available in the portfolio, so in this example 25% will be allocated. If the free amount available in the portfolio is 1280 USK, then the allocated amount will be 320 USK.</p>
     <p>In quantity, the value 8 was defined, so if the percentage value allocated to the budget is equivalent to 320 USK, then each buy order (bid) of the layer 2 will have an amount of 40 USK.</p>
 
@@ -285,22 +285,22 @@
     </ul>
 
 
-    <h4>Extra Step - New Configuration Files From Template</h4>
+    <h4 class="sub-heading">Extra Step - New Configuration Files From Template</h4>
     <p>During the installation process, the folders with the strategy configuration files are automatically copied from the <strong>templates</strong> folder to its adjacent directory:</p>
-    <pre>shared/funttastic/client/resources/strategies</pre>
+    <pre class="code">shared/funttastic/client/resources/strategies</pre>
     <p>These copied configuration files will be read by the application. But if you want to create new configurations completely clean, you can copy the folder of the desired strategy inside the <strong>templates</strong> folder and paste it next to the <strong>templates</strong> folder itself, similar to the <strong>pure_market_making</strong> folder that you can see in the image below.</p>
     <img src="../../../assets/images/script/strategy_conf_folder.png" alt="Strategies configuration folders">
 </details>
 
 <details>
-    <summary>
-        <span style="font-size:22px; font-weight:bold">Telegram Integration</span>
+    <summary class="details-heading">
+        <span>Telegram Integration</span>
     </summary>
 </details>
 
-<h4>Step 1 - From the main menu, select the Actions option</h4>
+<h4 class="sub-heading">Step 1 - From the main menu, select the Actions option</h4>
 
-<h3>Adding a Kujira wallet</h3>
+<h3 class="sub-heading">Adding a Kujira wallet</h3>
 
 <p>The easiest way is to use our helper script:</p>
 
@@ -315,9 +315,9 @@
     <p>shared/hummingbot/gateway/conf/wallets/kujira</p>
 </blockquote>
 
-<p>You can also do that using the Hummingbot Client terminal or calling the Hummingbot Gateway or Funttastic Humminbot Client API directly (for example using curl or Postman).</p>
+<p>You can also do that using the Hummingbot Client terminal or calling the Hummingbot Gateway or Funttastic Hummingbot Client API directly (for example using curl or Postman).</p>
 
-<h3>Configuring your strategy and workers</h3>
+<h3 class="sub-heading">Configuring your strategy and workers</h3>
 
 <p>You need to navigate to</p>
 
@@ -328,26 +328,26 @@
 <p>there you can configure your Supervisor (<code>supervisor.yml</code>) and your workers (<code>workers/01.yml</code>, etc.).</p>
 <p>You can use the <code>workers/common.yml</code> file if you want a configuration to be replicated to all your workers. If a specific worker has a different configuration, the worker configuration will then apply.</p>
 
-<h2>Extra (optional)</h2>
-<h3>More tutorial videos</h3>
+<h2 class="sub-heading">Extra (optional)</h2>
+<h3 class="sub-heading">More tutorial videos</h3>
 <p>You can access our playlist explaining how to configure several aspects for the bot:</p>
 <a href="https://www.youtube.com/playlist?list=PLmJF3KyUOI1zgFBoQ0AzP9kt40Vjk2srp" target="_blank">More tutorial videos</a>
 
-<h3>Configuring a telegram integration</h3>
+<h3 class="sub-heading">Configuring a telegram integration</h3>
 <p>Open the following configuration file:</p>
-<pre>shared/funttastic/client/resources/configuration/production.yml</pre>
+<pre class="code">shared/funttastic/client/resources/configuration/production.yml</pre>
 <p>You are enabling telegram, we recommend changing to `true` the following:</p>
-<pre>
+<pre class="code">
 logging.use_telegram
 telegram.enabled
 telegram.listen_commands
 </pre>
 <p>Add your telegram token to:</p>
-<pre>telegram.token</pre>
+<pre class="code">telegram.token</pre>
 <p>and your telegram channel chat id to:</p>
-<pre>telegram.chat_id</pre>
+<pre class="code">telegram.chat_id</pre>
 
-<h3>Adding funds to a testnet wallet</h3>
+<h3 class="sub-heading">Adding funds to a testnet wallet</h3>
 <p>In order to add funds to your wallet, you can use a faucet inside the Kujira Discord.</p>
 <p>To join their discord you can use this link:</p>
 <a href="https://discord.gg/teamkujira" target="_blank">https://discord.gg/teamkujira</a>
@@ -356,9 +356,9 @@ telegram.listen_commands
 <p>Or try this link:</p>
 <a href="https://discord.com/channels/970650215801569330/1009931570263629854" target="_blank">https://discord.com/channels/970650215801569330/1009931570263629854</a>
 <p>Then you can use the following command there:</p>
-<pre>!faucet &lt;change to your Kujira wallet address here&gt;</pre>
+<pre class="code">!faucet &lt;change to your Kujira wallet address here&gt;</pre>
 
-<h2>How to contact us</h2>
+<h2 class="sub-heading">How to contact us</h2>
 <p>If you need more info you can contact us here:</p>
 <a href="https://funttastic.com/discord" target="_blank">https://funttastic.com/discord</a>
 
