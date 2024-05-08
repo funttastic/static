@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Fun Telegram Bot Documentation</title>
+</head>
+<body>
+<h1>Fun Telegram Bot Documentation</h1>
+<p>This document is a documentation for the Funttastic Bot integrated on Telegram. The bot is able to do Market Making (MMing) using Kujira’s network (testnet and mainnet) and Hummingbot Gateway (HB Gateway).</p>
+<p>A tutorial on how to setup your own bot is available <a href="https://www.funttastic.com/partners/kujira">here</a>.</p>
+
+<h2>Supervisor</h2>
+<p>Here is the documentation explaining all aspects of the Supervisor’s summary on Telegram:</p>
+<ul>
+    <li><strong>Strategy name</strong>: <em>Strategy version</em>: <em>Strategy ID</em>:supervisor</li>
+    <li>Supervisor ID</li>
+    <li>Workers</li>
+    <li>Allowed workers</li>
+    <li>Active workers</li>
+    <li>Stopped workers</li>
+    <li>Profit and Loss (in US Dollars)</li>
+    <li>Global or combined (from all workers) profit and loss</li>
+    <li>Global percentual profit and loss</li>
+    <li>Global profit and loss amount</li>
+    <li>Wallets (in US Dollars)</li>
+    <li>Wallet initial value</li>
+    <li>Wallet previous value</li>
+    <li>Wallet current value</li>
+    <li>Percentual current to initial wallet value change</li>
+    <li>Percentual current to previous wallet value change</li>
+    <li>Balances (in US Dollars)</li>
+    <li>Total free/not used balance</li>
+    <li>Total balance amount locked in orders</li>
+    <li>Total unsettled balance amount (not free and not in orders)</li>
+    <li>Total balance (free + locked/orders + unsettled)</li>
+    <li>Settings</li>
+    <li>Amount of time the worker waits to run again</li>
+    <li>Defines if the worker has to run only once or not (true/false)</li>
+</ul>
+
+<h2>Worker</h2>
+<p>Here is the documentation explaining all aspects of the Worker’s summary on Telegram:</p>
+<ul>
+    <li><strong>Strategy name</strong>: <em>Strategy version</em>: <em>Strategy ID</em>:worker:<em>Worker ID</em></li>
+    <li>Worker ID</li>
+    <li>Network</li>
+    <li>Market</li>
+    <li>Wallet ID</li>
+    <li>Profit and Loss (in US Dollars)</li>
+    <li>Percentage</li>
+    <li>Amount</li>
+    <li>Balances (in US Dollars)</li>
+    <li>Total (base + quote)</li>
+    <li>Total free/not used balance</li>
+    <li>Total balance amount locked in orders</li>
+    <li>Total unsettled balance amount (not free and not in orders)</li>
+    <li>Total balance (free + locked/orders + unsettled)</li>
+    <li>Tokens</li>
+    <li>Base token of the current market</li>
+    <li>Current base token price</li>
+    <li>Base token free/not used balance</li>
+    <li>Base token balance locked in sell orders</li>
+    <li>Base token unsettled balance (not free and not in order)</li>
+    <li>Base token total balance</li>
+    <li>Quote token of the current market</li>
+    <li>Current quote token price</li>
+    <li>Current quote token free/not used balance</li>
+    <li>Current quote token balance locked in sell orders</li>
+    <li>Current quote unsettled token (not free and not in order)</li>
+    <li>Current quote token total balance</li>
+    <li>Wallet (in US Dollars)</li>
+    <li>Wallet initial value</li>
+    <li>Wallet previous value</li>
+    <li>Wallet current value</li>
+    <li>Percentual current to initial wallet value change</li>
+    <li>Percentual current to previous wallet value change</li>
+    <li>Price</li>
+    <li>Price effectively used to place orders</li>
+    <li>Current price from the market or ticker (mainnet price)</li>
+    <li>Orders</li>
+    <li>Quantity of new orders created in this round</li>
+    <li>Quantity of new orders canceled in this round</li>
+    <li>Fees</li>
+    <li>Name of the native token</li>
+    <li>Total amount of fees paid when creating orders</li>
+    <li>Total amount of fees paid when canceling orders</li>
+    <li>Total amount of fees paid while withdrawing or settling the balances</li>
+    <li>List of newly created orders</li>
+    <li>List of currently untracked orders</li>
+    <li>List of orders canceled</li>
+    <li>List of all filled orders</li>
+    <li>Settings</li>
+    <li>Amount of time the worker waits to run again</li>
+    <li>Type of the order (limit or market)</li>
+    <li>Strategy to define the current market price (middle, ticker, last fill): SAP (simple average price), WAP (weighted average price), VWAP (volume weighted average price)</li>
+</ul>
+</body>
+</html>
