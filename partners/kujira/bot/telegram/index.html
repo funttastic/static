@@ -100,5 +100,17 @@
     <li>Type of the order (limit or market)</li>
     <li>Strategy to define the current market price (middle, ticker, last fill): SAP (simple average price), WAP (weighted average price), VWAP (volume weighted average price)</li>
 </ul>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const summaries = document.querySelectorAll('.summary');
+        summaries.forEach(summary => {
+            summary.addEventListener('click', function() {
+                const details = this.nextElementSibling;
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    });
+</script>
 </body>
 </html>
