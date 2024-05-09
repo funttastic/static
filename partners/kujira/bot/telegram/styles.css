@@ -52,11 +52,11 @@ img  {
     padding-left: 0;
 }
 
-.prerequisites li {
+li {
     margin-bottom: 10px;
 }
 
-.prerequisites ul {
+ul {
     margin-top: 10px;
     padding-left: 20px;
 }

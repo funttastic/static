@@ -7,7 +7,7 @@
     <title>Fun Telegram Bot Documentation</title>
 </head>
 <body class="container py-5">
-<h1>Fun Telegram Bot Documentation</h1>
+<h1 class="heading">Fun Telegram Bot Documentation</h1>
 <p>This document is for the Funttastic Bot integrated on Telegram. The bot is capable of Market Making (MMing) using Kujira’s network (testnet and mainnet) and Hummingbot Gateway (HB Gateway).</p>
 <p>A tutorial on how to set up your own bot is available <a href="https://www.funttastic.com/partners/kujira" class="link-primary">here</a>.</p>
 
@@ -21,7 +21,7 @@
     <P>Here is the documentation explaining all aspects of the Supervisor’s summary on Telegram:</p>
     <img src="image/supervisor.png" alt="supervisor">
     <details>
-<!--        1. <Strategy name>: <Strategy version>: <Stragegy ID>:supervisor-->
+        1. Strategy name: Strategy version: Strategy ID:supervisor
         <ul>
             <li>2. Supervisor
                 <ul>
@@ -79,52 +79,118 @@
 </section>
 
 <section>
-    <h2>Worker</h2>
-    <p>Here is the documentation explaining all aspects of the Worker’s summary on Telegram:.</p>
-    <details>
+    1. <Strategy name>: <Strategy version>: <Strategy ID>:worker:<Worker ID>
 
+    <h2><strong>2. Worker</strong></h2>
+    <details>
         <ul>
-            <li>Worker’s ID</li>
-            <li>Network</li>
-            <li>Market</li>
-            <li>Wallet ID</li>
-            <li>Profit and Loss (in US Dollars)
+            <li>2.1. Worker’s ID</li>
+            <li>2.2. Network</li>
+            <li>2.3. Market</li>
+            <li>2.4. Wallet ID</li>
+            <li><strong>Profit and Loss (in US Dollars)</strong>
                 <ul>
-                    <li>Percentage</li>
-                    <li>Amount</li>
+                    <li>3.1. Percentage</li>
+                    <li>3.1. Amount</li>
                 </ul>
             </li>
-            <li>Balances (in US Dollars)
+            <li><strong>4. Balances (in US Dollars)</strong>
                 <ul>
-                    <li>Total (base + quote)</li>
-                    <li>Total free/not used balance</li>
-                    <li>Total balance amount locked in orders</li>
-                    <li>Total unsettled balance amount (not free and not in orders)</li>
-                    <li>Total balance (free + locked/orders + unsettled)</li>
+                 <li>4.1. Total (base + quote)</li>
+                        <li>4.1.1. Total free/not used balance</li>
+                        <li>4.1.2. Total balance amount locked in orders</li>
+                        <li>4.1.3. Total unsettled balance amount (not free and not in orders)</li>
+                        <li>4.1.4. Total balance (free + locked/orders + unsettled)</li>
                 </ul>
             </li>
-            <li>Tokens
+                <li>4.2 Tokens
+                    <ul>
+                        <li>4.2.1. Base token of the current market</li>
+                                <li>4.2.1.1.  Current base token price</li>
+                                <li>4.2.1.2.  Base token free/not used balance</li>
+                                <li>4.2.1.3.  Base token balance locked in sell orders</li>
+                                <li>4.2.1.4.  Base token unsettled balance (not free and not in order)</li>
+                                <li>4.2.1.5.  Base token total balance</li>
+                        <li>4.2.2. Quote token of the current market</li>
+                                <li>4.2.2.1.  Current quote token price</li>
+                                <li>4.2.2.2.  Current quote token free/not used balance</li>
+                                <li>4.2.2.3.  Current quote token balance locked in sell orders</li>
+                                <li>4.2.2.4.  Current quote unsettled token (not free and not in order)</li>
+                                <li>4.2.2.5.  Current quote token total balance</li>
+                    </ul>
+                </li>
+            <li><strong>5. Wallet (in US Dollars)</strong>
                 <ul>
-                    <li>Base token of the current market</li>
-                    <li>Current base token price</li>
-                    <li>Base token free/not used balance</li>
-                    <li>Base token balance locked in sell orders</li>
-                    <li>Base token unsettled balance (not free and not in order)</li>
-                    <li>Base token total balance</li>
-                    <li>Quote token of the current market</li>
-                    <li>Current quote token price</li>
-                    <li>Current quote token free/not used balance</li>
-                    <li>Current quote token balance locked in sell orders</li>
-                    <li>Current quote unsettled token (not free and not in order)</li>
-                    <li>Current quote token total balance</li>
+                    <li>5.1  Wallet initial value</li>
+                    <li>5.1  Wallet previous value</li>
+                    <li>5.1  Wallet current value</li>
+                    <li>5.1  Percentual current to initial wallet value change</li>
+                    <li>5.1  Percentual current to previous wallet value change</li>
                 </ul>
             </li>
-            <li>Settings
+
+             <li><strong>6. BASE (in QUOTE)</strong>
+                    <ul>
+                        <li>6.1. Base token initial price in quote token units</li>
+                        <li>6.1. Base token previous price in quote token units</li>
+                        <li>6.1. Base token current price in quote token units</li>
+                        <li>6.1. Percentual current to initial base token price change</li>
+                        <li>6.1. Percentual current to previous base token price change</li>
+                    </ul>
+             </li>
+
+            <li><strong>7. Price</strong>
+                    <ul>
+                        <li>7.1. Price effectively used to place orders</li>
+                        <li>7.1. Current price from the market or ticker (mainnet price)</li>
+                    </ul>
+            </li>
+
+            <li>8. Orders
                 <ul>
-                    <li>Amount of time the worker waits to run again</li>
-                    <li>Type of the order (limit or market)</li>
-                    <li>Strategy to define the current market price (middle, ticker, last fill)</li>
-                    <li>Strategy to define the current market middle price (SAP, WAP, VWAP): SAP (simple average price), WAP (weighted average price), VWAP (volume weighted average price)</li>
+                    <li>8.1. Quantity</li>
+                    <li>8.2. Quantity of new orders created in this round</li>
+                    <li>8.3. Quantity of new orders canceled in this round</li>
+                </ul>
+            </li>
+
+            <li>Fees
+                <ul>
+                    <li>9.1. Name of the native token</li>
+                    <li>9.2. Native token</li>
+                        <li>9.2.1 Total amount of fees paid when creating orders</li>
+                        <li>9.2.2 Total amount of fees paid when canceling orders</li>
+                        <li>9.2.3 Total amount of fees paid while withdrawing or settling the balances</li>
+                            <li>9.2.3.1 Native token total amount of fees paid while withdrawing</li>
+                            <li>9.2.3.2 Base token total amount of fees paid while withdrawing</li>
+                            <li>9.2.3.3 Quote token total amount of fees paid while withdrawing</li>
+                        <li>9.2.4.Total amount of fees paid in general</li>
+                </ul>
+            </li>
+
+            <li>9.3 US Dollars
+                <ul>
+                    <li>9.3.1. Total amount of fees paid when creating orders</li>
+                    <li>9.3.2. Total amount of fees paid when canceling orders</li>
+                    <li>9.3.3. Total amount of fees paid while withdrawing or settling the balances</li>
+                        <li>9.3.3.1. Native token total amount of fees paid, in USD, while withdrawing</li>
+                        <li>9.3.3.2. Base token total amount of fees paid, in USD, while withdrawing</li>
+                        <li>9.3.3.3. Quote token total amount of fees paid, in USD, while withdrawing</li>
+                    <li>9.3.4. Total amount of fees paid in general</li>
+                </ul>
+            </li>
+
+            <li>10. List of newly created orders</li>
+            <li>11. List of currently untracked orders</li>
+            <li>12. List of orders canceled</li>
+            <li>13. List of all filled orders</li>
+
+            <li>14. Settings
+                <ul>
+                    <li>14.1. Amount of time the worker waits to run again</li>
+                    <li>14.2. Type of the order (limit or market)</li>
+                    <li>14.3. Strategy to define the current market price (middle, ticker, last fill)</li>
+                    <li>14.4. Strategy to define the current market middle price (SAP, WAP, VWAP): SAP (simple average price), WAP (weighted average price), VWAP (volume weighted average price)</li>
                 </ul>
             </li>
         </ul>
