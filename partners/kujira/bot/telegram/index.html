@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
     <title>Fun Telegram Bot Documentation</title>
 </head>
-<body class="container py-5">
-<h1 class="heading">Fun Telegram Bot Documentation</h1>
+<body class="container py-5 text-slate-200">
+<h1 class="decoration">Fun Telegram Bot Documentation</h1>
 <p>This document is for the Funttastic Bot integrated on Telegram. The bot is capable of Market Making (MMing) using Kujira’s network (testnet and mainnet) and Hummingbot Gateway (HB Gateway).</p>
 <p>A tutorial on how to set up your own bot is available <a href="https://www.funttastic.com/partners/kujira" class="link-primary">here</a>.</p>
 
 <p>A <strong>Supervisor</strong> is an entity responsible to supervise all workers configured, collecting statistics globally.</p>
 
 <p>The <strong>Worker</strong> is an entity to work in a specific market with a specific strategy.</p>
-<section>
-    <h2>Supervisor</h2>
+
+    <h4><strong>Supervisor</strong></h4>
     <p>The Supervisor is responsible for overseeing all configured workers, collecting statistics globally.</p>
 
     <P>Here is the documentation explaining all aspects of the Supervisor’s summary on Telegram:</p>
     <img src="image/supervisor.png" alt="supervisor">
     <details>
-        1. Strategy name: Strategy version: Strategy ID:supervisor
         <ul>
-            <li>2. Supervisor
+            <li>2. <strong>Supervisor</strong>
                 <ul>
                     <li>2.1. Supervisor ID</li>
                 </ul>
             </li>
-            <li>Workers
+            <li>3. <strong>Workers</strong>
+
                 <ul>
                     <li>3.1. Allowed workers</li>
                     <li>3.2. Active workers</li>
                     <li>3.3. Stopped workers</li>
                 </ul>
             </li>
-            <li>4. Profit and Loss (in US Dollars)
+            <li>4. <strong>Profit and Loss (in US Dollars)</strong>
                 <ul>
                     <li> 4.1. Global or combined (from all workers) profit and loss
                         <ul>
@@ -51,7 +53,7 @@
                     </li>
                 </ul>
             </li>
-            <li>5. Wallets (in US Dollars)
+            <li>5. <strong>Wallets (in US Dollars)</strong>
                 <ul>
                     <li>5.1. Wallet initial value</li>
                     <li>5.2. Wallet previous value</li>
@@ -60,7 +62,7 @@
                     <li>5.5. Percentual current to previous wallet value change</li>
                 </ul>
             </li>
-            <li>6. Balances (in US Dollars)
+            <li> 6. <strong>Balances (in US Dollars)</strong>
                 <ul>
                     <li>6.1. Total free/not used balance</li>
                     <li>6.2. Total balance amount locked in orders</li>
@@ -68,7 +70,7 @@
                     <li>6.4. Total balance (free + locked/orders + unsettled)</li>
                 </ul>
             </li>
-            <li>7. Settings
+            <li> 7. <strong>Settings</strong>
                 <ul>
                     <li>7.1. Amount of time the worker waits to run again</li>
                     <li>7.2. Defines if the worker has to run only once or not (true/false)</li>
@@ -76,19 +78,21 @@
             </li>
         </ul>
     </details>
-</section>
 
-<section>
-    1. <Strategy name>: <Strategy version>: <Strategy ID>:worker:<Worker ID>
 
-    <h2><strong>2. Worker</strong></h2>
     <details>
+
         <ul>
-            <li>2.1. Worker’s ID</li>
-            <li>2.2. Network</li>
-            <li>2.3. Market</li>
-            <li>2.4. Wallet ID</li>
-            <li><strong>Profit and Loss (in US Dollars)</strong>
+            <li><strong>2. Worker</strong>
+                 <ul>
+                     <li>2.1. Worker’s ID</li>
+                     <li>2.2. Network</li>
+                     <li>2.3. Market</li>
+                     <li>2.4. Wallet ID</li>
+                 </ul>
+
+            </li>
+            <li>3. <strong>Profit and Loss (in US Dollars)</strong>
                 <ul>
                     <li>3.1. Percentage</li>
                     <li>3.1. Amount</li>
@@ -103,7 +107,7 @@
                         <li>4.1.4. Total balance (free + locked/orders + unsettled)</li>
                 </ul>
             </li>
-                <li>4.2 Tokens
+                <li> 4.2 <strong>Tokens</strong>
                     <ul>
                         <li>4.2.1. Base token of the current market</li>
                                 <li>4.2.1.1.  Current base token price</li>
@@ -119,7 +123,7 @@
                                 <li>4.2.2.5.  Current quote token total balance</li>
                     </ul>
                 </li>
-            <li><strong>5. Wallet (in US Dollars)</strong>
+            <li>5. <strong>Wallet (in US Dollars)</strong>
                 <ul>
                     <li>5.1  Wallet initial value</li>
                     <li>5.1  Wallet previous value</li>
@@ -129,7 +133,7 @@
                 </ul>
             </li>
 
-             <li><strong>6. BASE (in QUOTE)</strong>
+             <li>6. <strong>BASE (in QUOTE)</strong>
                     <ul>
                         <li>6.1. Base token initial price in quote token units</li>
                         <li>6.1. Base token previous price in quote token units</li>
@@ -139,14 +143,14 @@
                     </ul>
              </li>
 
-            <li><strong>7. Price</strong>
+            <li>7. <strong>Price</strong>
                     <ul>
                         <li>7.1. Price effectively used to place orders</li>
                         <li>7.1. Current price from the market or ticker (mainnet price)</li>
                     </ul>
             </li>
 
-            <li>8. Orders
+            <li>8. <strong>Orders</strong>
                 <ul>
                     <li>8.1. Quantity</li>
                     <li>8.2. Quantity of new orders created in this round</li>
@@ -154,7 +158,7 @@
                 </ul>
             </li>
 
-            <li>Fees
+            <li>9. <strong>Fees</strong>
                 <ul>
                     <li>9.1. Name of the native token</li>
                     <li>9.2. Native token</li>
@@ -168,7 +172,7 @@
                 </ul>
             </li>
 
-            <li>9.3 US Dollars
+            <li>9.3 <strong>US Dollars</strong>
                 <ul>
                     <li>9.3.1. Total amount of fees paid when creating orders</li>
                     <li>9.3.2. Total amount of fees paid when canceling orders</li>
@@ -179,13 +183,28 @@
                     <li>9.3.4. Total amount of fees paid in general</li>
                 </ul>
             </li>
+            <li>
+                <ul>
+                   <strong>10. List of newly created orders</strong>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <strong>11. List of currently untracked orders</strong>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <strong>12. List of orders canceled</strong>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <strong>13. List of all filled orders</strong>
+                </ul>
+            </li>
 
-            <li>10. List of newly created orders</li>
-            <li>11. List of currently untracked orders</li>
-            <li>12. List of orders canceled</li>
-            <li>13. List of all filled orders</li>
-
-            <li>14. Settings
+            <li> 14. <strong>Settings</strong>
                 <ul>
                     <li>14.1. Amount of time the worker waits to run again</li>
                     <li>14.2. Type of the order (limit or market)</li>
@@ -194,8 +213,6 @@
                 </ul>
             </li>
         </ul>
-    </details>
-</section>
 
 </body>
 </html>

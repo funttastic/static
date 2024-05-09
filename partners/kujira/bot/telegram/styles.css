@@ -1,12 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
+    background-color: rgb(31 41 55);
+    color: rgb(226 232 240);
 }
 
 img  {
-    width: 80vw;
-    max-width: 100%;
+    width: 30vw;
+    max-width: 20%;
     height: auto;
     display: block;
     margin: auto auto 20px;
@@ -14,43 +15,24 @@ img  {
 
 
 .container {
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 20px 15px;
 }
 
-.heading {
+.decoration {
     text-align: center;
     margin-bottom: 50px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
 }
 
-.sub-heading {
-    font-size: 24px;
-    margin-top: 30px;
+strong {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
 }
 
-.btn-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.btn-list li {
-    margin-bottom: 10px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.prerequisites {
-    list-style-type: none;
-    padding-left: 0;
-}
 
 li {
     margin-bottom: 10px;
@@ -67,37 +49,20 @@ ul {
     margin: 20px auto;
 }
 
-.details-heading {
-    font-size: 20px;
+details {
+    font-size: 15px;
     font-weight: bold;
     margin-top: 20px;
     cursor: pointer;
 }
 
-.details-heading:hover {
-    color: #007bff;
+
+details::marker {
+    content: none;
 }
 
-.details-heading::marker {
-    content: "▶";
-}
-
-.details-heading:focus {
+details:focus {
     outline: none;
 }
 
-code {
-    display: block;
-    padding: 10px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    margin-top: 10px;
-}
 
-.footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 20px 0;
-    background-color: #007bff;
-    color: #fff;
-}
