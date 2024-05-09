@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
+    background-color: rgb(31 41 55);
+    color: rgb(226 232 240);
 }
 
 img  {
@@ -11,6 +12,7 @@ img  {
     display: block;
     margin: auto auto 20px;
 }
+
 
 
 .container {
@@ -40,11 +42,14 @@ img  {
 
 .btn {
     display: inline-block;
-    padding: 5px 10px;
-    background-color: #007bff;
+    padding: 2px 3px;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgba(6, 177, 250, 0.22);
 }
 
 .prerequisites {
@@ -89,7 +94,7 @@ img  {
 code {
     display: block;
     padding: 10px;
-    background-color: #f8f9fa;
+    background-color: #bec1c1;
     border-radius: 5px;
     margin-top: 10px;
 }
