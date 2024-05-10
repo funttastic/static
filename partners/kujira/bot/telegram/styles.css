@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: rgb(31 41 55);
-    color: rgb(226 232 240);
+    background-color: rgb(48, 65, 87);
+    color: rgba(226, 232, 240, 0.85);
 }
 
 img  {
@@ -24,11 +24,13 @@ img  {
 .decoration {
     text-align: center;
     margin-bottom: 50px;
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
 }
 
 strong {
+
+}
+
+.strong {
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
 }
