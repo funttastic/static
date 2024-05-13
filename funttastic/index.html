@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Funttastic</title>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,28 +23,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap"
     rel="stylesheet">
-
+  <title>Funttastic</title>
   <script src="js/modernizr.js"></script>
 </head>
 
-<body class="homepage bg-dark text-white">
-  <nav class="navbar navbar-expand-lg container-fluid p-4 ">
-    <div class="container-fluid">
-      <div class="main-logo ">
+<body class="homepage bg-black text-white">
+  <nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <div class="main-logo">
         <a href="index.html">
           <img src="images/vizion-banner-02.png" alt="logo" class="w-25">
         </a>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <iconify-icon icon="system-uicons:menu-hamburger" class="hamburger-menu"></iconify-icon>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
-        </div>
+
         <div class="offcanvas-body justify-content-between">
           <div class="main-menu text-center d-lg-flex align-items-center ">
             <ul class="menu-list list-unstyled d-lg-flex content-light m-0">
@@ -54,12 +45,7 @@
               <li class="menu-item text-uppercase">
                 <a class="fw-bold" href="about.html">About</a>
               </li>
-<!--              <li class="menu-item text-uppercase">-->
-<!--                <a class="fw-bold" href="blog.html">Blog</a>-->
-<!--              </li>-->
-              <li class="menu-item text-uppercase">
-                <a class="fw-bold" href="services.html">Service</a>
-              </li>
+
               <li class="menu-item text-uppercase">
                 <a class="fw-bold" href="contact.html">Contact</a>
               </li>
@@ -82,184 +68,6 @@
 <!--              </li>-->
             </ul>
           </div>
-          <div class="btn-wrap d-md-flex">
-            <a href="#" class="btn btn-normal btn-medium align-self-center text-uppercase btn-rounded login-btn"  data-bs-toggle="modal" data-bs-target="#exampleModal">Log
-              in</a>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  <div class="tabs-listing mt-4">
-                                    <nav>
-                                      <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab" role="tablist">
-                                        <button class="btn btn-outline-primary text-uppercase me-3 active" id="nav-sign-in-tab"
-                                          data-bs-toggle="tab" data-bs-target="#nav-sign-in" type="button" role="tab"
-                                          aria-controls="nav-sign-in" aria-selected="true">Log In</button>
-                                        <button class="btn btn-outline-primary text-uppercase" id="nav-register-tab"
-                                          data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab"
-                                          aria-controls="nav-register" aria-selected="false">Sign Up</button>
-                                      </div>
-                                    </nav>
-                                    <div class="tab-content" id="nav-tabContent">
-                                      <div class="tab-pane fade active show" id="nav-sign-in" role="tabpanel"
-                                        aria-labelledby="nav-sign-in-tab">
-                                        <form id="form1" class="form-group flex-wrap p-3 ">
-                                          <div class="form-input col-lg-12 my-4">
-                                            <label for="exampleInputEmail1"
-                                              class="form-label fs-6 text-uppercase fw-bold text-black ">Email
-                                              Address</label>
-                                            <input type="text" id="exampleInputEmail1" name="email" placeholder="Email"
-                                              class="form-control bg-secondary bg-opacity-10 ps-3">
-                                          </div>
-                                          <div class="form-input col-lg-12 my-4">
-                                            <label for="inputPassword1"
-                                              class="form-label  fs-6 text-uppercase fw-bold text-black ">Password</label>
-                                            <input type="password" id="inputPassword1" placeholder="Password"
-                                              class="form-control bg-secondary bg-opacity-10 ps-3" aria-describedby="passwordHelpBlock">
-                                            <div id="passwordHelpBlock" class="form-text text-center">
-                                              <a href="#" class=" password">Forgot Password ?</a>
-                                            </div>
-            
-                                          </div>
-                                          <label class="py-3">
-                                            <input type="checkbox" required="" class="d-inline">
-                                            <span class="label-body text-black">Remember Me</span>
-                                          </label>
-                                          <div class="d-grid my-3">
-                                            <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
-                                              In</button>
-                                          </div>
-                                        </form>
-                                      </div>
-                                      <div class="tab-pane fade" id="nav-register" role="tabpanel"
-                                        aria-labelledby="nav-register-tab">
-                                        <form id="form2" class="form-group flex-wrap p-3 ">
-                                          <div class="form-input col-lg-12 my-4">
-                                            <label for="exampleInputEmail2"
-                                              class="form-label fs-6 text-uppercase fw-bold text-black">Email
-                                              Address</label>
-                                            <input type="text" id="exampleInputEmail2" name="email" placeholder="Email"
-                                              class="form-control bg-secondary bg-opacity-10 ps-3">
-                                          </div>
-                                          <div class="form-input col-lg-12 my-4">
-                                            <label for="inputPassword2"
-                                              class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
-                                            <input type="password" id="inputPassword2" placeholder="Password"
-                                              class="form-control bg-secondary bg-opacity-10 ps-3" aria-describedby="passwordHelpBlock">
-                                          </div>
-                                          <label class="py-3">
-                                            <input type="checkbox" required="" class="d-inline">
-                                            <span class="label-body text-black">I agree to the <a href="#"
-                                                class="text-black password border-bottom">Privacy Policy</a>
-                                            </span>
-                                          </label>
-                                          <div class="d-grid my-3">
-                                            <button
-                                              class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
-                                              Up</button>
-                                          </div>
-                                        </form>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-            <a href="#" class="btn btn-linear btn-medium align-self-center btn-rounded text-uppercase register-btn mt-3 mt-md-0" data-bs-toggle="modal"
-            data-bs-target="#exampleModal2">Register</a>
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  <div class="tabs-listing mt-4">
-                                    <nav>
-                                      <div class="nav nav-tabs d-flex justify-content-center border-0" id="nav-tab2" role="tablist">
-                                        <button class="btn btn-outline-primary text-uppercase me-4 " id="nav-sign-in-tab2"
-                                          data-bs-toggle="tab" data-bs-target="#nav-sign-in2" type="button" role="tab"
-                                          aria-controls="nav-sign-in2" aria-selected="false">Log In</button>
-                                        <button class="btn btn-outline-primary text-uppercase active" id="nav-register-tab2"
-                                          data-bs-toggle="tab" data-bs-target="#nav-register2" type="button" role="tab"
-                                          aria-controls="nav-register2" aria-selected="true">Sign Up</button>
-                                      </div>
-                                    </nav>
-                                    <div class="tab-content" id="nav-tabContent1">
-                                      <div class="tab-pane fade " id="nav-sign-in2" role="tabpanel"
-                                        aria-labelledby="nav-sign-in-tab2">
-                                        <form id="form3" class="form-group flex-wrap p-3 ">
-                                          <div class="form-input col-lg-12 my-4">
-                                            <label for="exampleInputEmail3"
-                                              class="form-label fs-6 text-uppercase fw-bold text-black">Email
-                                              Address</label>
-                                            <input type="text" id="exampleInputEmail3" name="email" placeholder="Email"
-                                              class="form-control bg-secondary bg-opacity-10 ps-3">
-                                          </div>
-                                          <div class="form-input col-lg-12 my-4">
-                                            <label for="inputPassword3"
-                                              class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
-                                            <input type="password" id="inputPassword3" placeholder="Password"
-                                              class="form-control bg-secondary bg-opacity-10 ps-3" aria-describedby="passwordHelpBlock">
-                                            <div id="passwordHelpBlock2" class="form-text text-center">
-                                              <a href="#" class=" password">Forgot Password ?</a>
-                                            </div>
-            
-                                          </div>
-                                          <label class="py-3">
-                                            <input type="checkbox" required="" class="d-inline">
-                                            <span class="label-body text-black">Remember Me</span>
-                                          </label>
-                                          <div class="d-grid my-3">
-                                            <button class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Log
-                                              In</button>
-                                          </div>
-                                        </form>
-                                      </div>
-                                      <div class="tab-pane fade active show" id="nav-register2" role="tabpanel"
-                                        aria-labelledby="nav-register-tab2">
-                                        <form id="form4" class="form-group flex-wrap p-3 ">
-                                          <div class="form-input col-lg-12 my-4">
-                                            <label for="exampleInputEmail4"
-                                              class="form-label fs-6 text-uppercase fw-bold text-black">Email
-                                              Address</label>
-                                            <input type="text" id="exampleInputEmail4" name="email" placeholder="Email"
-                                              class="form-control bg-secondary bg-opacity-10 ps-3">
-                                          </div>
-                                          <div class="form-input col-lg-12 my-4">
-                                            <label for="inputPassword4"
-                                              class="form-label  fs-6 text-uppercase fw-bold text-black">Password</label>
-                                            <input type="password" id="inputPassword4" placeholder="Password"
-                                              class="form-control bg-secondary bg-opacity-10 ps-3" aria-describedby="passwordHelpBlock">
-                                          </div>
-                                          <label class="py-3">
-                                            <input type="checkbox" required="" class="d-inline">
-                                            <span class="label-body text-black">I agree to the <a href="#"
-                                                class="text-black password border-bottom">Privacy Policy</a>
-                                            </span>
-                                          </label>
-                                          <div class="d-grid my-3">
-                                            <button
-                                              class="btn btn-primary btn-lg btn-dark text-uppercase btn-rounded-none fs-6">Sign
-                                              Up</button>
-                                          </div>
-                                        </form>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-          </div>
         </div>
       </div>
     </div>
@@ -280,149 +88,12 @@
               Building consulting services and products related to smart contracts, investment, crypto token launching, NFTs, machine learning, strategic and business intelligence models, and reports.
               We have experience with Smart Contracts, NFTs, Machine Learning, HFT, Trading Bots, Python, Tensorflow, Pandas, Keras, NumPy, Solidity, Bitcoin blockchain and nodes, Google Cloud, PostgreSQL, Docker, Binance, PanckakeSwap, CCXT, TradingView, and more. Also, identifying and materializing opportunities and services related to crypto and blockchain (like token launching partnerships, NFT collections, automated trading and HFT, Machine Learning models, investment opportunities and more).</p>
 
-<!--            <div class="btn-wrap">-->
-<!--              <a href="#" class="btn btn-linear btn-medium text-uppercase btn-rounded">Try for free</a>-->
-<!--            </div>-->
           </div>
         </div>
       </div>
     </div>
   </div>
 
-<!--  <section id="product-card" class="position-relative padding-large">-->
-<!--    <div class="pattern-overlay"><img src="images/pattern-blur.png" alt="pattern-overlay"></div>-->
-
-<!--    <div class="section-header text-center">-->
-<!--      <h2 class="display-5">Best crypto currently</h2>-->
-<!--    </div>-->
-
-<!--    <div class="container">-->
-<!--      <div class="row d-flex flex-wrap">-->
-
-<!--        <div class="col-md-4 my-3">-->
-<!--          <div class="product-item mx-4 text-center border-set-bold border-rounded-50">-->
-<!--            <div class="icon-holder">-->
-<!--              <i class="icon icon-bitcoin"></i>-->
-<!--            </div>-->
-<!--            <div class="product-detail">-->
-<!--              <div class="card-header">-->
-<!--                <h3 class="card-title light">Bitcoin</h3>-->
-<!--                <span class="currency text-linear">31,020.564 $</span>-->
-<!--              </div>-->
-<!--              <div class="btn-card padding-small">-->
-<!--                <a href="#" class="btn btn-outline-accent btn-medium btn-rounded btn-medium text-uppercase">buy it-->
-<!--                  now</a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        <div class="col-md-4 my-3">-->
-<!--          <div class="product-item mx-4 text-center border-set-bold border-rounded-50">-->
-<!--            <div class="icon-holder">-->
-<!--              <i class="icon icon-ethereum"></i>-->
-<!--            </div>-->
-<!--            <div class="product-detail">-->
-<!--              <div class="card-header">-->
-<!--                <h3 class="card-title light">Ethereum</h3>-->
-<!--                <span class="currency text-linear">4.4668 $</span>-->
-<!--              </div>-->
-<!--              <div class="btn-card padding-small">-->
-<!--                <a href="#" class="btn btn-outline-accent btn-medium btn-rounded btn-medium text-uppercase">buy it-->
-<!--                  now</a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        <div class="col-md-4 my-sm-3">-->
-<!--          <div class="product-item mx-4 text-center border-set-bold border-rounded-50">-->
-<!--            <div class="icon-holder">-->
-<!--              <i class="icon icon-ripple"></i>-->
-<!--            </div>-->
-<!--            <div class="product-detail">-->
-<!--              <div class="card-header">-->
-<!--                <h3 class="card-title light">Ripple</h3>-->
-<!--                <span class="currency text-linear">0.6549 $</span>-->
-<!--              </div>-->
-<!--              <div class="btn-card padding-small">-->
-<!--                <a href="#" class="btn btn-outline-accent btn-medium btn-rounded btn-medium text-uppercase">buy it-->
-<!--                  now</a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-
-<!--  <section id="track-earning" class="cryptocode-info padding-large">-->
-<!--    <div class="container">-->
-<!--      <div class="row">-->
-
-<!--        <div class="col-md-6">-->
-<!--          <div class="image-holder">-->
-<!--            <img src="images/single-image1.png" alt="crypto">-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        <div class="col-md-6">-->
-<!--          <div class="inner-content p-5">-->
-<!--            <h2 class="display-5">Track your earnings and cryptocode made it easy</h2>-->
-<!--            <p>Nulla dui ultrices sed nam ligula dignissim tellus. Sem semper lorem facilisis ut amet tincidunt-->
-<!--              adipiscing maecenas.</p>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-
-<!--  <section id="trust-us" class="cryptocode-info padding-large">-->
-<!--    <div class="container">-->
-<!--      <div class="row">-->
-
-<!--        <div class="col-md-6">-->
-<!--          <div class="inner-content p-5 left-block">-->
-<!--            <h2 class="display-5">Trust us due to our safe and convenient deposit</h2>-->
-<!--            <p>Tristique morbi scelerisque vitae. Nulla dui ultrices sed nam ligula dignissim tellus semper lorem-->
-<!--              facilisis ut. Amet tincidunt adipiscing varius maecenas adipiscing. </p>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        <div class="col-md-6">-->
-<!--          <div class="image-holder">-->
-<!--            <img src="images/single-image2.png" alt="crypto">-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-
-<!--  <section id="subscribe" class="padding-large pattern-circle">-->
-<!--    <div class="container">-->
-<!--      <div class="row d-flex justify-content-center">-->
-
-<!--        <div class="col-md-8">-->
-<!--          <div class="subscribe-content">-->
-<!--            <div class="subscribe-header text-center">-->
-<!--              <h2 class="display-5">Subscribe & get news updates</h2>-->
-<!--              <p>Duis massa posuere commodo sed tortor ultrices accumsan augue. Aliquet bibendum placerat vivamus diam-->
-<!--                ullamcorper vitae sapien auctor ut. Suspendisse donec id aenean diam dolor nec vitae massa id. Velit-->
-<!--                nullam consequat orci amet fames sed. Amet tincidunt adipiscing varius maecenas adipiscing.</p>-->
-<!--            </div>-->
-<!--            <form id="form" class="border-set-bold border-rounded-20">-->
-<!--              <input type="text" name="email" placeholder="Write your email here" class="btn-rounded">-->
-<!--              <button class="btn btn-linear btn-medium btn-rounded text-uppercase">Subscribe Now</button>-->
-<!--            </form>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
 
   <footer id="footer" class="padding-small">
     <div class="container">
