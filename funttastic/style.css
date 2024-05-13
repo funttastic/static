@@ -849,6 +849,10 @@ fieldset[disabled] a.btn {
   padding-bottom: 9.5em;
 }
 
+.padding-bottom {
+  padding-bottom: 9rem;
+}
+
 /* no padding */
 .no-padding-top {
   padding-top: 0 !important;
