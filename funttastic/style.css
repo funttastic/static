@@ -127,7 +127,7 @@ CSS STRUCTURE:
   box-sizing: border-box;
 }
 html {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 body {
   font-family: var(--body-font);
@@ -915,6 +915,17 @@ fieldset[disabled] a.btn {
 .bg-blue-trans {
   background: rgba(134, 155, 223, 0.14) !important;
   border: 2px solid rgba(83, 84, 136, 0.4);
+}
+.homepage {
+  background: linear-gradient(15deg,
+  #6f42c1 5%,
+  #0d6efd 25%,
+  #198754 50%,
+  #ffc107 75%,
+  #dc3545 100%););
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 /* - Content Colors
