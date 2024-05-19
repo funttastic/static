@@ -316,6 +316,13 @@ dfn, cite, em, i {
   content: "";
 }
 
+section {
+  display: flex;
+  padding-bottom: 40px; /* Espaço interno antes da borda */
+  margin-bottom: 0; /* Espaço após a borda */
+}
+
+
 /** Text Align
 --------------------------------------------------------------*/
 .text-left {
@@ -1077,6 +1084,12 @@ blockquote cite {
   text-transform: none;
 }
 
+@media(max-width:311px) {
+  .responsive-about-menu {font-size: 10px;}
+  .responsive-title {font-size: 25px;}
+
+}
+
 /* 5.3 Comments List
 ------------------------------------------*/
 .comment-list .comment-item {
@@ -1275,6 +1288,12 @@ iconify-icon.hamburger-menu{
     border-radius: 10px;
 }
 
+.footer-menu{
+  justify-content: space-between;
+  padding: 2px;
+}
+
+
 /* Footer Bottom
 --------------------------------------------------------------*/
 #footer-bottom a {
@@ -1405,6 +1424,12 @@ FAQs page style start
 .accordion-button:not(.collapsed)::after {
   background-image: url('https://api.iconify.design/iconamoon/arrow-down-2-fill.svg?color=white');
   transform: rotate(-180deg);
+}
+
+.midia-social {
+  width: 30px;
+  height: auto;
+  padding-top: 1px;
 }
 
 
