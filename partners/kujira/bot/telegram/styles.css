@@ -7,10 +7,11 @@ body {
 
 img  {
     width: 30vw;
-    max-width: 20%;
+    max-width: 25%;
     height: auto;
     display: block;
-    margin: auto auto 20px;
+    margin: auto auto 5px;
+    padding-top:25px;
 }
 
 
@@ -30,7 +31,6 @@ img  {
     text-decoration-line: none;
     text-decoration-thickness: 2px;
 }
-
 
 li {
     margin-bottom: 10px;
