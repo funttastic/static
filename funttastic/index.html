@@ -29,7 +29,7 @@
   <script src="js/modernizr.js"></script>
 </head>
 
-<body class="homepage text-black-70">
+<body id="home" class="homepage text-black-70">
   <nav class="navbar navbar-expand-sm">
     <div class="container">
 
@@ -44,9 +44,9 @@
                 <a class="fw-bold text-black-70" href="#about-section">About</a>
               </li>
 
-              <li class="menu-item text-uppercase">
-                <a class="fw-bold text-black-70" href="#contact-section">Contact</a>
-              </li>
+<!--              <li class="menu-item text-uppercase">-->
+<!--                <a class="fw-bold text-black-70" href="#contact-section">Contact</a>-->
+<!--              </li>-->
 <!--              <li class="menu-item text-uppercase dropdown">-->
 <!--                <a class="fw-bold dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"-->
 <!--                  aria-expanded="false" href="#">Pages</a>-->
@@ -299,13 +299,19 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-8 text-center">
+      <div class="col-md-5 text-center">
         <p>
-          Copyright &copy;<script>document.write(new Date().getFullYear());</script>All Rights Reserved<i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="" target="_blank"> Funttastic Labs </a>
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved<i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="#home" > Funttastic Labs </a>
         </p>
       </div>
     </div>
   </footer>
+  <script>
+    document.querySelector('a[href="#home"]').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
 
   <script src="js/jquery-1.11.0.min.js"></script>
   <script src="./assets/vendor/chocolat/js/chocolat.js"></script>
