@@ -1318,7 +1318,7 @@ iconify-icon.hamburger-menu{
 }
 
 .nav-link {
-    color: #9099a7;
+    color: rgba(43, 46, 50, 0.82);
 }
 .nav-link:hover {
     color: #111;
