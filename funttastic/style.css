@@ -1499,3 +1499,38 @@ iconify-icon.services{
   background-color: rgb(255, 248, 220);
   color: rgba(0, 0, 0, 0.63);
 }
+
+/* Carousel */
+
+.carousel-item {
+  padding: 2rem 0;
+}
+.carousel-indicators button {
+  margin-bottom: -10px;
+  background-color: #000;
+}
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.tab-cont {
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tab-cont h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.tab-cont p, .tab-cont ul {
+  font-size: 1rem;
+  color: #333;
+}
+.tab-cont ul li {
+  margin-bottom: 1rem;
+}
+.tab-cont ul li h3 {
+  font-size: 1.25rem;
+}

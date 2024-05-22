@@ -122,38 +122,20 @@
 
 
 
-
   <section id="about-section" class="iq-bg-orange text-black-70 py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div id="features2" class="iq-education-tab">
-            <ul class="nav nav-pills-about tabs-left justify-content-center" role="tablist" style="margin-bottom: 5px; flex-wrap: nowrap;">
-              <li class="nav-item-about">
-                <a class="nav-link active" id="0-tab" data-bs-toggle="tab" href="#home-edu-0" role="tab" aria-selected="true">
-                  <span class="responsive-about-menu fw-bold">Objetive</span>
-                </a>
-              </li>
-              <li class="nav-item-about">
-                <a class="nav-link" id="1-tab" data-bs-toggle="tab" href="#home-edu-1" role="tab" aria-selected="false">
-                  <span class="responsive-about-menu fw-bold">Expertise</span>
-                </a>
-              </li>
-              <li class="nav-item-about">
-                <a class="nav-link" id="3-tab" data-bs-toggle="tab" href="#home-edu-2" role="tab" aria-selected="false">
-                  <span class="responsive-about-menu fw-bold">Vibe</span>
-                </a>
-              </li>
-              <li class="nav-item-about">
-                <a class="nav-link" id="4-tab" data-bs-toggle="tab" href="#home-edu-3" role="tab" aria-selected="false">
-                  <span class="responsive-about-menu fw-bold">Partners</span>
-                </a>
-              </li>
-            </ul>
-
-            <div class="tab-content" style="box-shadow: none;">
+          <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Objetive"></button>
+              <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Expertise"></button>
+              <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Vibe"></button>
+              <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="3" aria-label="Partners"></button>
+            </div>
+            <div class="carousel-inner">
               <!-- Objetive -->
-              <div class="tab-pane show active" id="home-edu-0">
+              <div class="carousel-item active">
                 <div class="row justify-content-between">
                   <div class="col-lg-1 col-md-2"></div>
                   <div class="col-lg-5 col-md-6 iq-mb-30">
@@ -162,12 +144,7 @@
                   <div class="col-lg-5 col-md-6 text-left align-self-center">
                     <div class="tab-cont p-4">
                       <h3 class="font-weight-bold text-center mb-4">Forging Ahead Together on the Path of Progress</h3>
-                      <p class="mt-4 text-center">"
-                        In an ever-evolving landscape of technological breakthroughs, where artificial intelligence and blockchain
-                        networks lead the charge, we're committed to crafting robust systems that integrate the latest innovations
-                        to effortlessly address the unique needs of our clientele.
-                        Together, we embark on a journey at the vanguard of innovation, where every milestone reached signifies a collective
-                        leap toward unparalleled success and growth."</p>
+                      <p class="mt-4 text-center">In an ever-evolving landscape of technological breakthroughs, where artificial intelligence and blockchain networks lead the charge, we're committed to crafting robust systems that integrate the latest innovations to effortlessly address the unique needs of our clientele. Together, we embark on a journey at the vanguard of innovation, where every milestone reached signifies a collective leap toward unparalleled success and growth.</p>
                     </div>
                   </div>
                   <div class="col-lg-1 col-md-2"></div>
@@ -175,7 +152,7 @@
               </div>
 
               <!-- Expertise -->
-              <div class="tab-pane" id="home-edu-1">
+              <div class="carousel-item">
                 <div class="row justify-content-between">
                   <div class="col-lg-1 col-md-2"></div>
                   <div class="col-lg-5 col-md-6 iq-mb-30">
@@ -185,7 +162,7 @@
                     <div class="tab-cont p-4">
                       <h3 class="font-weight-bold text-center mb-4">Skills</h3>
                       <ul class="list-unstyled">
-                        <li class="padding-xsmall"><h3>Bot creation</h3><p>Empower your cryptocurrency endeavors with custom-designed bots tailored to your preferences. Seamlessly navigate the dynamic market landscape by automating buy and sell orders with precision and efficiency. .</p></li>
+                        <li class="padding-xsmall"><h3>Bot creation</h3><p>Empower your cryptocurrency endeavors with custom-designed bots tailored to your preferences. Seamlessly navigate the dynamic market landscape by automating buy and sell orders with precision and efficiency.</p></li>
                         <li class="padding-xsmall"><h3>Tokens creation</h3><p>Unlock the potential of blockchain technology for your business with our specialized expertise in crafting bespoke crypto tokens. Tailored to your unique requirements, our solutions empower you to realize your vision with confidence.</p></li>
                         <li class="padding-xsmall"><h3>Integration with exchanges</h3><p>Streamline your operations with seamless integration capabilities, enabling smooth data exchange with leading cryptocurrency exchanges. From accessing order books to executing transactions, our comprehensive services ensure hassle-free management of your assets.</p></li>
                         <li class="padding-xsmall"><h3>Cutting-Edge Technologies</h3><p>Harness the power of cutting-edge technologies to stay ahead of the curve. With proficiency in Smart Contracts, NFTs, Machine Learning, High-Frequency Trading (HFT), and a myriad of tools including Python, TensorFlow, and Solidity, we equip you with the tools needed to thrive in the digital landscape.</p></li>
@@ -198,7 +175,7 @@
               </div>
 
               <!-- Vibe -->
-              <div class="tab-pane" id="home-edu-2">
+              <div class="carousel-item">
                 <div class="row justify-content-between">
                   <div class="col-lg-1 col-md-2"></div>
                   <div class="col-lg-5 col-md-6 iq-mb-30">
@@ -207,7 +184,7 @@
                   <div class="col-lg-5 col-md-6 text-left align-self-center text-black-70">
                     <div class="tab-cont p-4">
                       <h3 class="font-weight-bold text-center mb-4">We love what we do</h3>
-                      <p class="mt-2 text-center">We are passionate about what we do. We love technology. We live for programming.                      </p>
+                      <p class="mt-2 text-center">We are passionate about what we do. We love technology. We live for programming.</p>
                       <p class="mt-2 text-center">Our company was founded with the purpose of uniting two things we cherish: programming and having fun.:)</p>
                       <p class="mt-2 text-center">We believe a company can be both efficient and enjoyable, creating an environment where employees never want to leave.;)</p>
                       <p class="mt-2 ts- text-center">Above all, we are unwavering in our commitment and dedication to delivering exceptional results for our clients' projects. We put our heart and soul into every task, ensuring that our clients receive nothing but the best.</p>
@@ -218,7 +195,7 @@
               </div>
 
               <!-- Partners -->
-              <div class="tab-pane" id="home-edu-3">
+              <div class="carousel-item">
                 <div class="row justify-content-between">
                   <div class="col-lg-1 col-md-2"></div>
                   <div class="col-lg-3 col-md-4 iq-mb-30 text-center">
@@ -240,11 +217,145 @@
                 </div>
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+
+
+
+  <!--  <section id="about-section" class="iq-bg-orange text-black-70 py-5">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <div class="col-md-12">-->
+<!--          <div id="features2" class="iq-education-tab">-->
+<!--            <ul class="nav nav-pills-about tabs-left justify-content-center" role="tablist" style="margin-bottom: 5px; flex-wrap: nowrap;">-->
+<!--              <li class="nav-item-about">-->
+<!--                <a class="nav-link active" id="0-tab" data-bs-toggle="tab" href="#home-edu-0" role="tab" aria-selected="true">-->
+<!--                  <span class="responsive-about-menu fw-bold">Objetive</span>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="nav-item-about">-->
+<!--                <a class="nav-link" id="1-tab" data-bs-toggle="tab" href="#home-edu-1" role="tab" aria-selected="false">-->
+<!--                  <span class="responsive-about-menu fw-bold">Expertise</span>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="nav-item-about">-->
+<!--                <a class="nav-link" id="3-tab" data-bs-toggle="tab" href="#home-edu-2" role="tab" aria-selected="false">-->
+<!--                  <span class="responsive-about-menu fw-bold">Vibe</span>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              <li class="nav-item-about">-->
+<!--                <a class="nav-link" id="4-tab" data-bs-toggle="tab" href="#home-edu-3" role="tab" aria-selected="false">-->
+<!--                  <span class="responsive-about-menu fw-bold">Partners</span>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--            </ul>-->
+
+<!--            <div class="tab-content" style="box-shadow: none;">-->
+<!--              &lt;!&ndash; Objetive &ndash;&gt;-->
+<!--              <div class="tab-pane show active" id="home-edu-0">-->
+<!--                <div class="row justify-content-between">-->
+<!--                  <div class="col-lg-1 col-md-2"></div>-->
+<!--                  <div class="col-lg-5 col-md-6 iq-mb-30">-->
+<!--                    <img src="images/about/01.png" class="img-fluid centralize" alt="img01">-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-5 col-md-6 text-left align-self-center">-->
+<!--                    <div class="tab-cont p-4">-->
+<!--                      <h3 class="font-weight-bold text-center mb-4">Forging Ahead Together on the Path of Progress</h3>-->
+<!--                      <p class="mt-4 text-center">"-->
+<!--                        In an ever-evolving landscape of technological breakthroughs, where artificial intelligence and blockchain-->
+<!--                        networks lead the charge, we're committed to crafting robust systems that integrate the latest innovations-->
+<!--                        to effortlessly address the unique needs of our clientele.-->
+<!--                        Together, we embark on a journey at the vanguard of innovation, where every milestone reached signifies a collective-->
+<!--                        leap toward unparalleled success and growth."</p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-1 col-md-2"></div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              &lt;!&ndash; Expertise &ndash;&gt;-->
+<!--              <div class="tab-pane" id="home-edu-1">-->
+<!--                <div class="row justify-content-between">-->
+<!--                  <div class="col-lg-1 col-md-2"></div>-->
+<!--                  <div class="col-lg-5 col-md-6 iq-mb-30">-->
+<!--                    <img src="images/about/02.png" class="img-fluid centralize" alt="img" id="img02">-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-5 col-md-6 text-left align-self-center">-->
+<!--                    <div class="tab-cont p-4">-->
+<!--                      <h3 class="font-weight-bold text-center mb-4">Skills</h3>-->
+<!--                      <ul class="list-unstyled">-->
+<!--                        <li class="padding-xsmall"><h3>Bot creation</h3><p>Empower your cryptocurrency endeavors with custom-designed bots tailored to your preferences. Seamlessly navigate the dynamic market landscape by automating buy and sell orders with precision and efficiency. .</p></li>-->
+<!--                        <li class="padding-xsmall"><h3>Tokens creation</h3><p>Unlock the potential of blockchain technology for your business with our specialized expertise in crafting bespoke crypto tokens. Tailored to your unique requirements, our solutions empower you to realize your vision with confidence.</p></li>-->
+<!--                        <li class="padding-xsmall"><h3>Integration with exchanges</h3><p>Streamline your operations with seamless integration capabilities, enabling smooth data exchange with leading cryptocurrency exchanges. From accessing order books to executing transactions, our comprehensive services ensure hassle-free management of your assets.</p></li>-->
+<!--                        <li class="padding-xsmall"><h3>Cutting-Edge Technologies</h3><p>Harness the power of cutting-edge technologies to stay ahead of the curve. With proficiency in Smart Contracts, NFTs, Machine Learning, High-Frequency Trading (HFT), and a myriad of tools including Python, TensorFlow, and Solidity, we equip you with the tools needed to thrive in the digital landscape.</p></li>-->
+<!--                        <li class="padding-xsmall"><h3>Insightful Solutions</h3><p>Gain a competitive edge with our insightful approach to identifying and capitalizing on opportunities in the crypto and blockchain sphere. From forging token launch partnerships to curating NFT collections and implementing automated trading strategies, our solutions pave the way for sustainable growth and success.</p></li>-->
+<!--                      </ul>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-1 col-md-2"></div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              &lt;!&ndash; Vibe &ndash;&gt;-->
+<!--              <div class="tab-pane" id="home-edu-2">-->
+<!--                <div class="row justify-content-between">-->
+<!--                  <div class="col-lg-1 col-md-2"></div>-->
+<!--                  <div class="col-lg-5 col-md-6 iq-mb-30">-->
+<!--                    <img src="images/about/03.png" class="img-fluid centralize" alt="img03">-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-5 col-md-6 text-left align-self-center text-black-70">-->
+<!--                    <div class="tab-cont p-4">-->
+<!--                      <h3 class="font-weight-bold text-center mb-4">We love what we do</h3>-->
+<!--                      <p class="mt-2 text-center">We are passionate about what we do. We love technology. We live for programming.                      </p>-->
+<!--                      <p class="mt-2 text-center">Our company was founded with the purpose of uniting two things we cherish: programming and having fun.:)</p>-->
+<!--                      <p class="mt-2 text-center">We believe a company can be both efficient and enjoyable, creating an environment where employees never want to leave.;)</p>-->
+<!--                      <p class="mt-2 ts- text-center">Above all, we are unwavering in our commitment and dedication to delivering exceptional results for our clients' projects. We put our heart and soul into every task, ensuring that our clients receive nothing but the best.</p>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-1 col-md-2"></div>-->
+<!--                </div>-->
+<!--              </div>-->
+
+<!--              &lt;!&ndash; Partners &ndash;&gt;-->
+<!--              <div class="tab-pane" id="home-edu-3">-->
+<!--                <div class="row justify-content-between">-->
+<!--                  <div class="col-lg-1 col-md-2"></div>-->
+<!--                  <div class="col-lg-3 col-md-4 iq-mb-30 text-center">-->
+<!--                    <img src="images/about/04-1.png" class="img-fluid centralize mb-3" alt="" style="width: 150px;">-->
+<!--                    <h3 class="font-weight-bold mb-2">Companion</h3>-->
+<!--                    <p class="mt-4" style="max-width: 80%; margin: auto;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-3 col-md-4 iq-mb-30 text-center">-->
+<!--                    <img src="images/about/04-2.png" class="img-fluid centralize mb-3" alt="" style="width: 150px;">-->
+<!--                    <h3 class="font-weight-bold mb-2">Partner-name</h3>-->
+<!--                    <p class="mt-4" style="max-width: 80%; margin: auto;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-3 col-md-4 iq-mb-30 text-center">-->
+<!--                    <img src="images/about/04-3.png" class="img-fluid centralize mb-3" alt="" style="width: 150px;">-->
+<!--                    <h3 class="font-weight-bold mb-2">Partner-name</h3>-->
+<!--                    <p class="mt-4" style="max-width: 80%; margin: auto;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-1 col-md-2"></div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
 <!--  <div>-->
 <!--    <section id="contact-section" class="contact-section py-5">-->
