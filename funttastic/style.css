@@ -1448,3 +1448,54 @@ iconify-icon.services{
   font-size: 5rem;
   color: var(--primary-color);
 }
+
+
+/* News letter */
+
+#news-area {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#input-form {
+  width: 100%;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#email-input {
+  height: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 90px;
+  background-color: rgb(255, 248, 220);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#news-btn {
+  position: absolute;
+  right: 0;
+  top: -15px;
+  bottom: 0;
+  height: 25px;
+  border: none;
+  background-color: #73aae4;
+  color: rgba(255, 255, 255, 0.77);
+  padding: 0 20px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  z-index: 10;
+}
+
+#news-btn:hover {
+  background-color: rgb(255, 248, 220);
+  color: rgba(0, 0, 0, 0.63);
+}
