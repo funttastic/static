@@ -1487,7 +1487,7 @@ iconify-icon.services{
   bottom: 0;
   height: 25px;
   border: none;
-  background-color: #73aae4;
+  background-color: rgb(95, 127, 234);
   color: rgba(255, 255, 255, 0.77);
   padding: 0 20px;
   cursor: pointer;
