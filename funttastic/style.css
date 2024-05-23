@@ -110,7 +110,7 @@ CSS STRUCTURE:
 
 /* Fonts */
 :root {
-    --body-font           : "Lato", sans-serif;
+    --body-font           : "Montserrat", sans-serif;
     --heading-font        : "Inter", sans-serif;
 }
 
@@ -263,7 +263,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
 }
 p {
-   font-size: 19px;
+   font-size: 15px;
    line-height: 2;
    margin: 0 0 20px 0;
 }
@@ -318,7 +318,7 @@ dfn, cite, em, i {
 
 section {
   display: flex;
-  padding-bottom: 40px; /* Espaço interno antes da borda */
+  padding-bottom: 30px; /* Espaço interno antes da borda */
   margin-bottom: 0; /* Espaço após a borda */
 }
 
@@ -356,7 +356,6 @@ section {
   color: var(--primary-color) !important;
 }
 .text-hide {
-  font: 0/0 a;
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -571,7 +570,7 @@ form {
   -ms-flex-align: baseline !important;
   align-items: baseline !important;
 }
-/* disable selction in section title */
+/* disable selection in section title */
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -1199,8 +1198,12 @@ iconify-icon.hamburger-menu{
   font-size: 30px;
 }
 
-/* 6.3 Association With
---------------------------------------------------------------*/
+#billboard {
+  margin-bottom: 10px;
+}
+
+  /* 6.3 Association With
+  --------------------------------------------------------------*/
 #association-with img {
     width: auto;
 }
@@ -1251,6 +1254,9 @@ iconify-icon.hamburger-menu{
 
 /* 6.7 Footer
 --------------------------------------------------------------*/
+.footer {
+  padding: 0.1rem 0;
+}
 
 /*  Footer Top
 --------------------------------------------------------------*/
@@ -1492,7 +1498,7 @@ iconify-icon.services{
   padding: 0 20px;
   cursor: pointer;
   border-radius: 0 4px 4px 0;
-  z-index: 10;
+  /*z-index: 10;*/
 }
 
 #news-btn:hover {
@@ -1503,24 +1509,33 @@ iconify-icon.services{
 /* Carousel */
 
 .carousel-item {
+  align-items: center;
+  justify-content: center;
   padding: 2rem 0;
+  height: 400px;
+}
+.carousel-indicators {
+  justify-content: center;
 }
 .carousel-indicators button {
-  margin-bottom: -10px;
+  margin-bottom: -5px;
   background-color: #000;
 }
 .tab-cont {
-  padding: 2rem;
   border-radius: 8px;
-  background-color: thistle;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 .tab-cont h3 {
-  font-weight: bold;
-  margin-bottom: 1rem;
+  color: ivory;
+  margin-bottom: 0.5rem;
 }
 .tab-cont p {
-  font-weight: bold;
   font-size: 1rem;
-  color: #333;
+  color: ivory;
 }
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
