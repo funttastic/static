@@ -27,8 +27,9 @@ img  {
 }
 
 .sub-heading {
-    font-size: 24px;
+    font-size: 19px;
     margin-top: 30px;
+    font-weight: bold;
 }
 
 .btn-list {
@@ -77,18 +78,37 @@ img  {
     font-weight: bold;
     margin-top: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 2px 3px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .details-heading:hover {
-    color: #007bff;
+    background-color: rgba(6, 177, 250, 0.22);
 }
 
-.details-heading::marker {
-    content: "▶";
+.details-heading::before {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.open .details-heading::before {
+    transform: rotate(90deg);
 }
 
 .details-heading:focus {
     outline: none;
+}
+
+.details-content {
+    display: none;
+}
+
+.open .details-content {
+    display: block;
 }
 
 code {
