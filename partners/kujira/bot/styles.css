@@ -80,14 +80,10 @@ img  {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 2px 3px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
 .details-heading:hover {
-    background-color: rgba(6, 177, 250, 0.22);
+    color: seashell;
 }
 
 .details-heading::before {
