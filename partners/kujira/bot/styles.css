@@ -129,8 +129,25 @@ code {
     border: none;
 }
 
+.custom-accordion-button::after {
+    filter: invert(1);
+    margin-left: -250px;
+}
+
+
+.custom-accordion-button2::after {
+    filter: invert(1);
+    margin-left: -800px;
+}
+
 .custom-accordion-button:hover {
     color: seashell;
+}
+
+.custom-accordion-button:not(.collapsed) {
+    background-color: rgb(31, 41, 55);
+    color: white;
+    border: none;
 }
 
 .custom-accordion-button.collapsed {
@@ -141,5 +158,5 @@ code {
     box-shadow: none;
 }
 .accordion-body {
-    padding: 1rem;
+    padding: 0.5rem;
 }
