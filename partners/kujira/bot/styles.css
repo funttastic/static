@@ -180,3 +180,10 @@ code {
 .accordion-body {
     padding: 0.5rem;
 }
+
+.img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto auto 20px;
+}

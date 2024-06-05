@@ -272,10 +272,10 @@
         <p>If you don't want to use any of your workers, you don't need to remove their configuration files, just disable it in the <strong>supervisor</strong> configuration file, as we will see later.</p>
         <p>But if you want to completely delete the configuration file of one of the workers, no problem, you can remove it. Just make sure to disable his <strong>id</strong> in your <strong>supervisor</strong> settings.</p>
         <p>When you open some <strong>worker</strong> configuration file, you will see something like below:</p>
-        <img src="../../../assets/images/script/worker_configuration_file_template.png" alt="Worker configuration file template">
+        <img class="img" src="../../../assets/images/script/worker_configuration_file_template.png" alt="Worker configuration file template">
         <p>In the other image below, there is an example of a configured worker.</p>
         <p>Below the image read some explanations about some defined parameters:</p>
-        <img src="../../../assets/images/script/worker_configuration_example.png" alt="Worker configuration file template">
+        <img class="img" src="../../../assets/images/script/worker_configuration_example.png" alt="Worker configuration file template">
         <p><strong>Line 1</strong>: <strong>id</strong> - here you must define the <strong>id</strong> of the worker. For simplicity, a numeric <strong>id</strong> was defined there, but you can define any name you want, just avoid special characters and spaces.</p>
         <p><strong>Line 2</strong>: <strong>wallet</strong> - here you must add the public key of your wallet. This public key must be derived from the same <strong>mnemonic</strong> that you used or will use to add your wallet through <strong>Add Wallet</strong> on the <strong>Home</strong> page of the frontend.</p>
         <p><strong>Line 3</strong>: <strong>market</strong> - here you must define the market in which this worker will work. In this example, the <strong>KUJI/USK</strong> market was defined. The markets you will be able to trade on will be the markets available for <strong>mainnet</strong> and <strong>testnet</strong> on <strong>Kujira</strong>'s <strong>FIN</strong> at https://fin.kujira.network/. The name pattern normally consists of two symbols written in capital letters separated by the symbol <strong>"/"</strong>. If in doubt, open the market on <strong>FIN</strong> and look at the name of the pair in the page title.</p>
