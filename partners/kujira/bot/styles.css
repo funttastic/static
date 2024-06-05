@@ -135,9 +135,29 @@ code {
 }
 
 
-.custom-accordion-button2::after {
+.custom-accordion-button-two::after {
     filter: invert(1);
-    margin-left: -800px;
+    margin-left: -336px;
+}
+
+.custom-accordion-button-tree::after {
+    filter: invert(1);
+    margin-left: -239px;
+}
+
+.custom-accordion-button-four::after {
+    filter: invert(1);
+    margin-left: -290px;
+}
+
+.custom-accordion-button-five::after {
+    filter: invert(1);
+    margin-left: -196px;
+}
+
+.custom-accordion-button-six::after {
+    filter: invert(1);
+    margin-left: -402px;
 }
 
 .custom-accordion-button:hover {
