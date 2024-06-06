@@ -176,11 +176,11 @@ When you run the script, you will see the main menu screen as shown below:
 </summary>
 
 #### Step 1 - Go To Strategy Configuration Files Directory
-> Using FIlebrowser through Frontend, access the following directory to access the strategy configuration files:
+> Using Filebrowser through Frontend, access the following directory to access the strategy configuration files:
 >
 >> shared/funttastic/client/resources/strategies/pure_market_making/1.0.0
 >
-> There you can configure you Supervisor (`supervisor.yml`) and your workers (`workers/01.yml`, etc.).
+> There you can configure your Supervisor (`supervisor.yml`) and your workers (`workers/01.yml`, etc.).
 >
 > <img src="../../../assets/images/script/pmm_strategy_conf_folder.png" alt="Strategy configuration files">
 >
@@ -367,7 +367,7 @@ You need to navigate to
 
 > shared/funttastic/client/resources/strategies/pure_market_making/1.0.0
 
-there you can configure you Supervisor (`supervisor.yml`) and your workers (`workers/01.yml`, etc.).
+there you can configure your Supervisor (`supervisor.yml`) and your workers (`workers/01.yml`, etc.).
 
 You can use the `workers/common.yml` file if you want a configuration to be replicated to all your workers.
 If a specific worker has a different configuration, the worker configuration will then apply.

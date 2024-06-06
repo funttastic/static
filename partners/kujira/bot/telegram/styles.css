@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(31 41 55);
+    color: rgba(226, 232, 240, 0.85);
+}
+
+img  {
+    width: 30vw;
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: auto auto 5px;
+    padding-top:25px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.decoration {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.strong {
+    text-decoration-line: none;
+    text-decoration-thickness: 2px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.installation-image {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+details {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+details::marker {
+    content: none;
+}
+
+details:focus {
+    outline: none;
+}
+
+

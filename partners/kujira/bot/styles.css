@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(31 41 55);
+    color: rgb(226 232 240);
+}
+
+img  {
+    width: 80vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto auto 20px;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sub-heading {
+    font-size: 19px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.btn-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.btn-list li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 2px 3px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgba(6, 177, 250, 0.22);
+}
+
+.prerequisites {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.prerequisites li {
+    margin-bottom: 10px;
+}
+
+.prerequisites ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.installation-image {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.details-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.details-heading:hover {
+    color: seashell;
+}
+
+.details-heading::before {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.open .details-heading::before {
+    transform: rotate(90deg);
+}
+
+.details-heading:focus {
+    outline: none;
+}
+
+.details-content {
+    display: none;
+}
+
+.open .details-content {
+    display: block;
+}
+
+code {
+    display: block;
+    padding: 10px;
+    background-color: #bec1c1;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-accordion-button {
+    background-color: rgb(31, 41, 55);
+    color:rgb(226 232 240);
+    border: none;
+}
+
+.custom-accordion-button::after {
+    filter: invert(1);
+    margin-left: -250px;
+}
+
+
+.custom-accordion-button-two::after {
+    filter: invert(1);
+    margin-left: -336px;
+}
+
+.custom-accordion-button-tree::after {
+    filter: invert(1);
+    margin-left: -239px;
+}
+
+.custom-accordion-button-four::after {
+    filter: invert(1);
+    margin-left: -290px;
+}
+
+.custom-accordion-button-five::after {
+    filter: invert(1);
+    margin-left: -196px;
+}
+
+.custom-accordion-button-six::after {
+    filter: invert(1);
+    margin-left: -402px;
+}
+
+.custom-accordion-button:hover {
+    color: seashell;
+}
+
+.custom-accordion-button:not(.collapsed) {
+    background-color: rgb(31, 41, 55);
+    color: white;
+    border: none;
+}
+
+.custom-accordion-button.collapsed {
+    background-color: rgb(31, 41, 55);
+    border: none;
+}
+.custom-accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-body {
+    padding: 0.5rem;
+}
+
+.img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto auto 20px;
+}
