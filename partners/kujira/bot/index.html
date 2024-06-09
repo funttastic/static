@@ -236,10 +236,10 @@
 
                 <p>When you add a wallet, it will be added to the Hummingbot Gateway and Hummingbot Client files.</p>
                 <p>In Hummingbot Gateway, for each wallet added, there will be a .json file in the directory:</p>
-                <pre class="code">shared/hummingbot/gateway/conf/wallets/kujira</pre>
+                <pre class="code">hummingbot/gateway/conf/wallets/kujira</pre>
                 <img src="../../../assets/images/script/gateway_wallet_folder.png" alt="Filebrowser">
 
-                <p>In the Hummingbot Client, when you add a wallet, it will be added to the <strong>mainnet</strong> and <strong>testnet</strong> networks in the <strong>shared/hummingbot/conf/gateway_connections.json</strong> file and due to how the Hummingbot Client works, whenever you add a new wallet to the same chain, this new wallet will replace the wallet that was previously added, so for the Hummingbot Client, each chain can only have one wallet, but for the Hummingbot Gateway, there can be indefinite wallets added.</p>
+                <p>In the Hummingbot Client, when you add a wallet, it will be added to the <strong>mainnet</strong> and <strong>testnet</strong> networks in the <strong>hummingbot/conf/gateway_connections.json</strong> file and due to how the Hummingbot Client works, whenever you add a new wallet to the same chain, this new wallet will replace the wallet that was previously added, so for the Hummingbot Client, each chain can only have one wallet, but for the Hummingbot Gateway, there can be indefinite wallets added.</p>
                 <p>Unlike <strong>Hummingbot Client</strong>, <strong>Funttastic Client</strong> will be able to handle all the wallets you have added to <strong>Hummingbot Gateway</strong>.</p>
             </div>
         </div>
@@ -258,7 +258,7 @@
      <div id="flush-collapseOne-six" class="accordion-collapse collapse" aria-labelledby="flush-headingOne-six" data-bs-parent="#accordionFlush-six">
         <h4 class="sub-heading">Step 1 - Go To Strategy Configuration Files Directory</h4>
         <p>Using Filebrowser through Frontend, access the following directory to access the strategy configuration files:</p>
-        <pre class="code">shared/funttastic/client/resources/strategies/pure_market_making/1.0.0</pre>
+        <pre class="code">funttastic/client/resources/strategies/pure_market_making/1.0.0</pre>
         <p>There you can configure your Supervisor (<code>supervisor.yml</code>) and your workers (<code>workers/01.yml</code>, etc.).</p>
         <img src="../../../assets/images/script/pmm_strategy_conf_folder.png" alt="Strategy configuration files">
         <p>You can use the <code>workers/common.yml</code> file if you want a configuration to be replicated to all your workers.
@@ -370,7 +370,7 @@
 
         <h4 class="sub-heading">Extra Step - New Configuration Files From Template</h4>
         <p>During the installation process, the folders with the strategy configuration files are automatically copied from the <strong>templates</strong> folder to its adjacent directory:</p>
-        <pre class="code">shared/funttastic/client/resources/strategies</pre>
+        <pre class="code">funttastic/client/resources/strategies</pre>
         <p>These copied configuration files will be read by the application. But if you want to create new configurations completely clean, you can copy the folder of the desired strategy inside the <strong>templates</strong> folder and paste it next to the <strong>templates</strong> folder itself, similar to the <strong>pure_market_making</strong> folder that you can see in the image below.</p>
         <img src="../../../assets/images/script/strategy_conf_folder.png" alt="Strategies configuration folders">
      </div>
@@ -397,7 +397,7 @@
 <p>You will need to inform your mnemonic, then your wallet will be encrypted and saved in this folder:</p>
 
 <blockquote>
-    <p>shared/hummingbot/gateway/conf/wallets/kujira</p>
+    <p>hummingbot/gateway/conf/wallets/kujira</p>
 </blockquote>
 
 <p>You can also do that using the Hummingbot Client terminal or calling the Hummingbot Gateway or Funttastic Hummingbot Client API directly (for example using curl or Postman).</p>
@@ -407,7 +407,7 @@
 <p>You need to navigate to</p>
 
 <blockquote>
-    <p>shared/funttastic/client/resources/strategies/pure_market_making/1.0.0</p>
+    <p>funttastic/client/resources/strategies/pure_market_making/1.0.0</p>
 </blockquote>
 
 <p>there you can configure your Supervisor (<code>supervisor.yml</code>) and your workers (<code>workers/01.yml</code>, etc.).</p>
@@ -420,7 +420,7 @@
 
 <h3 class="sub-heading">Configuring a telegram integration</h3>
 <p>Open the following configuration file:</p>
-<pre class="code">shared/funttastic/client/resources/configuration/production.yml</pre>
+<pre class="code">funttastic/client/resources/configuration/production.yml</pre>
 <p>You are enabling telegram, we recommend changing to `true` the following:</p>
 <pre class="code">
 logging.use_telegram
