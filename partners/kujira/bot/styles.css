@@ -125,13 +125,50 @@ code {
 
 .custom-accordion-button {
     background-color: rgb(31, 41, 55);
-    color:rgb(226 232 240);
+    color: rgb(226, 232, 240);
     border: none;
 }
 
 .custom-accordion-button::after {
     filter: invert(1);
-    margin-left: -250px;
+    margin-left: -252px;
+}
+
+.accordion-button-Zero {
+    margin-left: 20px;
+}
+
+.accordion-button-Zero-fully {
+    margin-left: 20px;
+}
+
+.custom-accordion-button-Zero::after {
+    filter: invert(1);
+    margin-left: -288px;
+}
+.custom-accordion-button-Zero-one::after {
+    filter: invert(1);
+    margin-left: -215px;
+}
+
+.custom-accordion-button-Zero-two::after {
+    filter: invert(1);
+    margin-left: -462px;
+}
+
+.custom-accordion-button-Zero-tree::after {
+    filter: invert(1);
+    margin-left: -520px;
+}
+
+.custom-accordion-button-zero-fully::after {
+    filter: invert(1);
+    margin-left: -370px;
+}
+
+.custom-accordion-button-zero-asked::after {
+    filter: invert(1);
+    margin-left: -360px;
 }
 
 
