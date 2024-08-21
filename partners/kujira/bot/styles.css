@@ -139,7 +139,7 @@ code {
 }
 
 .accordion-button-Zero-fully {
-    margin-left: 20px;
+    margin-left: 8px;
 }
 
 .custom-accordion-button-Zero::after {
@@ -166,9 +166,30 @@ code {
     margin-left: -370px;
 }
 
+
+
 .custom-accordion-button-zero-asked::after {
     filter: invert(1);
     margin-left: -360px;
+}
+.custom-accordion-button-zero-asked-one::after {
+    filter: invert(1);
+    margin-left: -300px;
+}
+.custom-accordion-button-zero-asked-two::after {
+    filter: invert(1);
+    margin-left: -488px;
+}
+.custom-accordion-button-zero-asked-tree::after {
+    filter: invert(1);
+    margin-left: -225px;
+}
+.custom-accordion-button-zero-asked-four::after {
+    filter: invert(1);
+    margin-left: -443px;
+}
+.button-zero-asked {
+    margin-left: 13px;
 }
 
 
@@ -223,4 +244,16 @@ code {
     height: auto;
     display: block;
     margin: auto auto 20px;
+}
+
+.copy-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: rgba(0, 0, 0, 0.62);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
 }
