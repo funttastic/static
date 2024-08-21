@@ -66,7 +66,6 @@
   </li>
 </ul>
 
-<h2 class="sub-heading">Installation</h2>
 
 <div class="accordion accordion-flush" id="accordionFlushZero">
   <div class="accordion-item custom-accordion-button custom-accordion-button-Zero">
@@ -98,28 +97,26 @@
             <div id="flush-collapseZeroOne" class="accordion-collapse collapse" aria-labelledby="flush-headingZeroOne"
                  data-bs-parent="#nestedAccordion">
               <div class="accordion-body">
-                <ul>
-                  <code style="background:rgba(0,0,0,0.71); color: rgba(255,69,0,0.65)">
-                    <pre style="font-weight:bolder; text-align:left">
-                      IMAGE_NAME="funttastic/kujira:latest"
-                      CONTAINER_NAME="fun-kuji-hb"
-                      NETWORK="bridge"
-                      ADMIN_USERNAME="your_username"
-                        ADMIN_PASSWORD="your_password"
-                          HTTP_PORT="30080"
-                          HTTPS_PORT="30443"
+        <div style="position:relative;">
+<pre><code id="code-snippet-one" style="background:rgba(0,0,0,0.71); color: white">
+IMAGE_NAME="funttastic/kujira:latest"
+CONTAINER_NAME="fun-kuji-hb"
+NETWORK="bridge"
+ADMIN_USERNAME="your_username"
+ADMIN_PASSWORD="your_password"
+HTTP_PORT="30080"
+HTTPS_PORT="30443"
 
-                          docker run -dt \
-                          --name $CONTAINER_NAME \
-                          --network $NETWORK \
-                          -e ADMIN_USERNAME="$ADMIN_USERNAME" \
-                          -e ADMIN_PASSWORD="$ADMIN_PASSWORD" \
-                          -p $HTTP_PORT:80 \
-                          -p $HTTPS_PORT:443 \
-                          "$IMAGE_NAME"
-                    </pre>
-                  </code>
-                </ul>
+docker run -dt \
+  --name $CONTAINER_NAME \
+  --network $NETWORK \
+  -e ADMIN_USERNAME="$ADMIN_USERNAME" \
+  -e ADMIN_PASSWORD="$ADMIN_PASSWORD" \
+  -p $HTTP_PORT:80 \
+  -p $HTTPS_PORT:443 \
+  "$IMAGE_NAME"</code></pre>
+                <button class="copy-btn" onclick="copyToClipboard('#code-snippet-one')" style="background:rgba(0,0,0,0.5); border:none; color:white; padding:5px 10px; cursor:pointer;"><i class="fas fa-copy"></i> Copy</button>
+              </div>
               </div>
             </div>
           </div>
@@ -137,36 +134,36 @@
             <div id="flush-collapseZeroTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingZeroTwo"
                  data-bs-parent="#nestedAccordion">
               <div class="accordion-body">
-                <ul>
                   <p> If you have pre-generated valid SSL certificates with certbot, you can use them as follows:</p>
-                  <code style="background:rgba(0,0,0,0.71); color: rgba(255,69,0,0.65)">
-                    <pre style="font-weight:bolder">
-                          IMAGE_NAME="funttastic/kujira:latest"
-                          CONTAINER_NAME="fun-kuji-hb"
-                          NETWORK="bridge"
-                          ADMIN_USERNAME="your_username"
-                          ADMIN_PASSWORD="your_password"
-                          ADMIN_EMAIL="your_email"
-                          DOMAIN="your_domain"
-                          CERTIFICATES_FOLDER="/path/to/your/certificates/folder"
-                          HTTP_PORT="30080"
-                          HTTPS_PORT="30443"
+                <div style="position:relative;">
+                  <pre><code id="code-snippet-two" style="background:rgba(0,0,0,0.71); color: white">
 
-                          docker run -dt \
-                              --name $CONTAINER_NAME \
-                              --network $NETWORK \
-                              -e ADMIN_USERNAME="$ADMIN_USERNAME" \
-                              -e ADMIN_PASSWORD="$ADMIN_PASSWORD" \
-                              -e ADMIN_EMAIL="$ADMIN_EMAIL" \
-                              -e DOMAIN="$DOMAIN" \
-                              -v "$CERTIFICATES_FOLDER":"/etc/letsencrypt/archive/$DOMAIN" \
-                              -p $HTTP_PORT:80 \
-                              -p $HTTPS_PORT:443 \
-                              "$IMAGE_NAME"
+IMAGE_NAME="funttastic/kujira:latest"
+CONTAINER_NAME="fun-kuji-hb"
+NETWORK="bridge"
+ADMIN_USERNAME="your_username"
+ADMIN_PASSWORD="your_password"
+ADMIN_EMAIL="your_email"
+DOMAIN="your_domain"
+CERTIFICATES_FOLDER="/path/to/your/certificates/folder"
+HTTP_PORT="30080"
+HTTPS_PORT="30443"
 
-                      </pre>
-                  </code>
-                </ul>
+docker run -dt \
+    --name $CONTAINER_NAME \
+    --network $NETWORK \
+    -e ADMIN_USERNAME="$ADMIN_USERNAME" \
+    -e ADMIN_PASSWORD="$ADMIN_PASSWORD" \
+    -e ADMIN_EMAIL="$ADMIN_EMAIL" \
+    -e DOMAIN="$DOMAIN" \
+    -v "$CERTIFICATES_FOLDER":"/etc/letsencrypt/archive/$DOMAIN" \
+    -p $HTTP_PORT:80 \
+    -p $HTTPS_PORT:443 \
+    "$IMAGE_NAME"
+
+                      </code></pre>
+                <button class="copy-btn" onclick="copyToClipboard('#code-snippet-two')" style="position:absolute; right:10px; top:10px; background:rgba(0,0,0,0.5); border:none; color:white; padding:5px 10px; cursor:pointer;"><i class="fas fa-copy"></i> Copy</button>
+                  </div>
               </div>
             </div>
           </div>
@@ -184,7 +181,7 @@
             <div id="flush-collapseZeroTree" class="accordion-collapse collapse" aria-labelledby="flush-headingZeroTree"
                  data-bs-parent="#nestedAccordion">
               <div class="accordion-body">
-                <ul>
+
                   <p> If you want to generate a valid SSL certificate with certbot automatically, you can use the
                     following script.
                     But first you need to configure your DNS settings to point to the server where you will run the
@@ -192,35 +189,32 @@
                     Maybe it would be better to use bridge network or use host network and use the ports 80 and 443
                     directly.
                   </p>
+                <div style="position:relative;">
+                  <pre><code id="code-snippet-tree" style="background:rgba(0,0,0,0.71); color: white">
+IMAGE_NAME="funttastic/kujira:latest"
+CONTAINER_NAME="fun-kuji-hb"
+NETWORK="bridge"
+ADMIN_USERNAME="your_username"
+ADMIN_PASSWORD="your_password"
+ADMIN_EMAIL="your_email"
+DOMAIN="your_domain"
+CERTIFICATES_FOLDER="/path/to/your/certificates/folder"
+HTTP_PORT="80"
+HTTPS_PORT="443"
 
-                    <code style="background:rgba(0,0,0,0.71); color: rgba(255,69,0,0.65)">
-                       <pre>
-                         IMAGE_NAME="funttastic/kujira:latest"
-                          CONTAINER_NAME="fun-kuji-hb"
-                          NETWORK="bridge"
-                          ADMIN_USERNAME="your_username"
-                          ADMIN_PASSWORD="your_password"
-                          ADMIN_EMAIL="your_email"
-                          DOMAIN="your_domain"
-                          CERTIFICATES_FOLDER="/path/to/your/certificates/folder"
-                          HTTP_PORT="80"
-                          HTTPS_PORT="443"
-
-                          docker run -dt \
-                              --name $CONTAINER_NAME \
-                              --network $NETWORK \
-                              -e ADMIN_USERNAME="$ADMIN_USERNAME" \
-                              -e ADMIN_PASSWORD="$ADMIN_PASSWORD" \
-                              -e ADMIN_EMAIL="$ADMIN_EMAIL" \
-                              -e DOMAIN="$DOMAIN" \
-                              -p $HTTP_PORT:80 \
-                              -p $HTTPS_PORT:443 \
-                              "$IMAGE_NAME"
-                      </pre>
-                    </code>
-
-
-                </ul>
+docker run -dt \
+    --name $CONTAINER_NAME \
+    --network $NETWORK \
+    -e ADMIN_USERNAME="$ADMIN_USERNAME" \
+    -e ADMIN_PASSWORD="$ADMIN_PASSWORD" \
+    -e ADMIN_EMAIL="$ADMIN_EMAIL" \
+    -e DOMAIN="$DOMAIN" \
+    -p $HTTP_PORT:80 \
+    -p $HTTPS_PORT:443 \
+    "$IMAGE_NAME"
+                    </code></pre>
+                <button class="copy-btn" onclick="copyToClipboard('#code-snippet-tree')" style="position:absolute; right:10px; top:10px; background:rgba(0,0,0,0.5); border:none; color:white; padding:5px 10px; cursor:pointer;"><i class="fas fa-copy"></i> Copy</button>
+                  </div>
               </div>
             </div>
           </div>
@@ -229,6 +223,38 @@
       </div>
     </div>
   </div>
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          document.querySelectorAll('.copy-btn').forEach(button => {
+              button.addEventListener('click', function() {
+                  const selector = button.getAttribute('id');
+                  copyToClipboard(selector, button);
+              });
+          });
+      });
+
+      function copyToClipboard(selector, button) {
+
+          const codeElement = document.querySelector(selector);
+          if (codeElement) {
+              const textToCopy = codeElement.innerText;
+              navigator.clipboard.writeText(textToCopy).then(() => {
+                  alert('Texto copiado!');
+
+                  const originalText = button.innerHTML;
+                  button.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                  setTimeout(() => {
+                      button.innerHTML = originalText;
+                  }, 2000);
+              }).catch(err => {
+                  console.error('Erro ao copiar o texto: ', err);
+              });
+          } else {
+              console.error('Elemento não encontrado para o seletor:', selector);
+          }
+      }
+  </script>
+
 </div>
 
 
@@ -821,6 +847,14 @@
 </div>
 
 
+
+
+
+
+
+
+
+
 <div class="accordion accordion-flush" id="accordionFlush-asked">
   <div class="accordion-item custom-accordion-button custom-accordion-button-zero-asked">
     <h2 class="accordion-header" id="flush-heading-asked">
@@ -833,68 +867,135 @@
     <div id="flush-collapse-asked" class="accordion-collapse collapse" aria-labelledby="flush-heading-asked"
          data-bs-parent="#accordionFlush-asked">
       <div class="accordion-body">
-        <h2 class="sub-heading">Adding a Kujira wallet</h2>
-        <p>The easiest way is to use our helper script:</p>
-        <blockquote>
-          <p>./configure</p>
-        </blockquote>
-        <p>and go to the "Actions", then "Add Wallet".</p>
-        <p>You will need to inform your mnemonic, then your wallet will be encrypted and saved in this folder:</p>
-        <blockquote>
-          <p>hummingbot/gateway/conf/wallets/kujira</p>
-        </blockquote>
-        <p>You can also do that using the Hummingbot Client terminal or calling the Hummingbot Gateway or Funttastic
-          Hummingbot Client API directly (for example using curl or Postman).</p>
 
-        <h3 class="sub-heading">Configuring your strategy and workers</h3>
-        <p>You need to navigate to</p>
-        <blockquote>
-          <p>funttastic/client/resources/strategies/pure_market_making/1.0.0</p>
-        </blockquote>
-        <p>There you can configure your Supervisor (<code>supervisor.yml</code>) and your workers
-          (<code>workers/01.yml</code>, etc.).</p>
-        <p>You can use the <code>workers/common.yml</code> file if you want a configuration to be replicated to all your
-          workers. If a specific worker has a different configuration, the worker configuration will then apply.</p>
 
-        <h2 class="sub-heading">Extra (optional)</h2>
-        <h3 class="sub-heading">More tutorial videos</h3>
-        <p>You can access our playlist explaining how to configure several aspects for the bot:</p>
-        <a href="https://www.youtube.com/playlist?list=PLmJF3KyUOI1zgFBoQ0AzP9kt40Vjk2srp" target="_blank">More tutorial
-          videos</a>
+        <div class="accordion accordion-flush" id="accordionFlush-asked-one">
+          <div class="accordion-item custom-accordion-button custom-accordion-button-zero-asked-one button-zero-asked">
+            <h2 class="accordion-header" id="flush-heading-asked-one">
+              <button class="accordion-button custom-accordion-button custom-accordion-button-zero-asked-one button-zero-asked collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapse-asked-one"
+                      style="font-size:21px; font-weight:bolder">
+                <span style="font-size:21px; font-weight:bolder">Adding a Kujira wallet</span>
+              </button>
+            </h2>
+            <div id="flush-collapse-asked-one" class="accordion-collapse collapse" aria-labelledby="flush-heading-asked-one"
+                 data-bs-parent="#accordionFlush-asked-one">
+              <div class="accordion-body">
+                <p>The easiest way is to use our helper script:</p>
+                <blockquote>
+                  <p>./configure</p>
+                </blockquote>
+                <p>and go to the "Actions", then "Add Wallet".</p>
+                <p>You will need to inform your mnemonic, then your wallet will be encrypted and saved in this folder:</p>
+                <blockquote>
+                  <p>hummingbot/gateway/conf/wallets/kujira</p>
+                </blockquote>
+                <p>You can also do that using the Hummingbot Client terminal or calling the Hummingbot Gateway or Funttastic
+                  Hummingbot Client API directly (for example using curl or Postman).</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h3 class="sub-heading">Configuring a telegram integration</h3>
-        <p>Open the following configuration file:</p>
-        <pre class="code">funttastic/client/resources/configuration/production.yml</pre>
-        <p>To enable telegram, we recommend setting the following to `true`:</p>
-        <pre class="code">
+
+        <div class="accordion accordion-flush" id="accordionFlush-asked-two">
+          <div class="accordion-item custom-accordion-button custom-accordion-button-zero-asked-two button-zero-asked">
+            <h2 class="accordion-header" id="flush-heading-asked-two">
+              <button class="accordion-button custom-accordion-button custom-accordion-button-zero-asked-two button-zero-asked collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapse-asked-two"
+                      style="font-size:21px; font-weight:bolder">
+                <span style="font-size:21px; font-weight:bolder">Configuring your strategy and workers</span>
+              </button>
+            </h2>
+            <div id="flush-collapse-asked-two" class="accordion-collapse collapse" aria-labelledby="flush-heading-asked-two"
+                 data-bs-parent="#accordionFlush-asked-two">
+              <div class="accordion-body">
+                <p>You need to navigate to</p>
+                <blockquote>
+                  <p>funttastic/client/resources/strategies/pure_market_making/1.0.0</p>
+                </blockquote>
+                <p>There you can configure your Supervisor (<code>supervisor.yml</code>) and your workers
+                  (<code>workers/01.yml</code>, etc.).</p>
+                <p>You can use the <code>workers/common.yml</code> file if you want a configuration to be replicated to all your
+                  workers. If a specific worker has a different configuration, the worker configuration will then apply.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion accordion-flush" id="accordionFlush-asked-tree">
+          <div class="accordion-item custom-accordion-button custom-accordion-button-zero-asked-tree button-zero-asked">
+            <h2 class="accordion-header" id="flush-heading-asked-tree">
+              <button class="accordion-button custom-accordion-button custom-accordion-button-zero-asked-tree button-zero-asked collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapse-asked-tree"
+                      style="font-size:21px; font-weight:bolder">
+                <span style="font-size:21px; font-weight:bolder">Extra (optional)</span>
+              </button>
+            </h2>
+            <div id="flush-collapse-asked-tree" class="accordion-collapse collapse" aria-labelledby="flush-heading-asked-tree"
+                 data-bs-parent="#accordionFlush-asked-tree">
+              <div class="accordion-body">
+                <h3 class="sub-heading">More tutorial videos</h3>
+                <p>You can access our playlist explaining how to configure several aspects for the bot:</p>
+                <a href="https://www.youtube.com/playlist?list=PLmJF3KyUOI1zgFBoQ0AzP9kt40Vjk2srp" target="_blank">More tutorial
+                  videos</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion accordion-flush" id="accordionFlush-asked-four">
+          <div class="accordion-item custom-accordion-button custom-accordion-button-zero-asked-four button-zero-asked">
+            <h2 class="accordion-header" id="flush-heading-asked-four">
+              <button class="accordion-button custom-accordion-button custom-accordion-button-zero-asked-four button-zero-asked collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#flush-collapse-asked-four"
+                      style="font-size:21px; font-weight:bolder">
+                <span style="font-size:21px; font-weight:bolder">Configuring a telegram integration</span>
+              </button>
+            </h2>
+            <div id="flush-collapse-asked-four" class="accordion-collapse collapse" aria-labelledby="flush-heading-asked-four"
+                 data-bs-parent="#accordionFlush-asked-tree">
+              <div class="accordion-body">
+                <p>Open the following configuration file:</p>
+                <pre class="code">funttastic/client/resources/configuration/production.yml</pre>
+                <p>To enable telegram, we recommend setting the following to `true`:</p>
+                <pre class="code">
         logging.use_telegram
         telegram.enabled
         telegram.listen_commands
-</pre>
-        <p>Add your telegram token to:</p>
-        <pre class="code">telegram.token</pre>
-        <p>and your telegram channel chat id to:</p>
-        <pre class="code">telegram.chat_id</pre>
+      </pre>
+                <p>Add your telegram token to:</p>
+                <pre class="code">telegram.token</pre>
+                <p>and your telegram channel chat id to:</p>
+                <pre class="code">telegram.chat_id</pre>
 
-        <h3 class="sub-heading">Adding funds to a testnet wallet</h3>
-        <p>In order to add funds to your wallet, you can use a faucet inside the Kujira Discord.</p>
-        <p>To join their discord you can use this link:</p>
-        <a href="https://discord.gg/teamkujira" target="_blank">https://discord.gg/teamkujira</a>
-        <p>After joining and completing their verification process, you can look for this channel:</p>
-        <p>#public-testnet-faucet</p>
-        <p>Or try this link:</p>
-        <a href="https://discord.com/channels/970650215801569330" target="_blank">https://discord.com/channels/970650215801569330</a>
-        <p>Then you can use the following command there:</p>
-        <pre class="code">!faucet &lt;change to your Kujira wallet address here&gt;</pre>
+                <h3 class="sub-heading">Adding funds to a testnet wallet</h3>
+                <p>In order to add funds to your wallet, you can use a faucet inside the Kujira Discord.</p>
+                <p>To join their discord you can use this link:</p>
+                <a href="https://discord.gg/teamkujira" target="_blank">https://discord.gg/teamkujira</a>
+                <p>After joining and completing their verification process, you can look for this channel:</p>
+                <p>#public-testnet-faucet</p>
+                <p>Or try this link:</p>
+                <a href="https://discord.com/channels/970650215801569330" target="_blank">https://discord.com/channels/970650215801569330</a>
+                <p>Then you can use the following command there:</p>
+                <pre class="code">!faucet &lt;change to your Kujira wallet address here&gt;</pre>
 
-        <h2 class="sub-heading">How to contact us</h2>
-        <p>If you need more info, you can contact us here:</p>
-        <a href="https://www.funttastic.com/discord" target="_blank">https://funttastic.com/discord</a>
+                <h2 class="sub-heading">How to contact us</h2>
+                <p>If you need more info, you can contact us here:</p>
+                <a href="https://www.funttastic.com/discord" target="_blank">https://funttastic.com/discord</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </div>
-
-
 </body>
 </html>
